@@ -8,13 +8,26 @@ body {
 .menu > ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+}
+
+.menu li {
+  padding: 40px;
+  font-family: "Cicle Gordita";
+}
+
+.menu li:hover {
+  padding: 40px;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .menu{
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.35);
 }
