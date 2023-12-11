@@ -12,5 +12,5 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(250, 0, 0, 0.1); /* opacité à la fin */
+  background-color: rgba(0, 0, 0, 0.165); /* opacité à la fin */
 }
