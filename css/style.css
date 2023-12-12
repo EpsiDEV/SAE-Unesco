@@ -2,32 +2,14 @@
   background-image: url(../assets/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
 }
 
-.menu > ul {
-  list-style: none;
-  display: flex;
-}
-
-.menu li {
-  padding: 40px;
-  font-family: "Cicle Gordita";
-}
-
-.menu li:hover {
-  padding: 40px;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.menu{
-  padding: 0;
-  margin: 0;
-  font-size: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.35);
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 0, 0, 0.1); /* opacité à la fin */
 }
