@@ -1,15 +1,38 @@
-  body {
+body {
   background-image: url(../assets/background.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  height: 100vh;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(250, 0, 0, 0.1); /* opacité à la fin */
+.navbar ul {
+  margin: 0 auto;
+  display: table;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  padding: 0 50px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
