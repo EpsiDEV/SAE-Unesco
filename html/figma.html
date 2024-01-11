@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap" />
+    <style>
+      :root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+    background: #000000;
+    overflow: hidden;
+  }
+  .box {
+    position: relative;
+    width: 1440px;
+    height: 91px;
+    margin: 0 0 0 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+    overflow: hidden;
+  }
+  .group {
+    position: absolute;
+    width: 357px;
+    height: 91px;
+    top: 50%;
+    left: 50%;
+    transform: translate(102.52%, -50%);
+    z-index: 11;
+    overflow: hidden;
+  }
+  .pic {
+    position: absolute;
+    width: 95px;
+    height: 91px;
+    top: 0;
+    left: 43px;
+    background: url(./assets/images/5e3fb88d04337365ff23d1fc95104323871f9f49.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 12;
+  }
+  .pic-2 {
+    position: absolute;
+    width: 95px;
+    height: 91px;
+    top: 0;
+    left: 149px;
+    background: url(./assets/images/6495d0a202721472461a53b11c79aea953184a7c.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 13;
+  }
+  .pic-3 {
+    position: absolute;
+    width: 95px;
+    height: 91px;
+    top: 0;
+    left: 255px;
+    background: url(./assets/images/839bed3acd4b64e5b0b657017ed20a6ca7e5904d.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 14;
+  }
+  .section {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    width: 519px;
+    top: 50%;
+    left: 50%;
+    padding: 10px 10px 10px 10px;
+    transform: translate(-100%, -10%);
+    z-index: 6;
+  }
+  .text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    position: absolute;
+    width: 154px;
+    top: calc(50% - 0px);
+    left: calc(50% - 336.5px);
+    color: #ffffff;
+    font-family: Comfortaa, var(--default-font-family);
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 7;
+  }
+  .text-2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    position: absolute;
+    width: 154px;
+    top: calc(50% - 0px);
+    left: calc(50% - 140.5px);
+    color: #ffffff;
+    font-family: Comfortaa, var(--default-font-family);
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 8;
+  }
+  .text-3 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    position: absolute;
+    width: 246px;
+    top: calc(50% - 0px);
+    left: calc(50% - -28.5px);
+    color: #ffffff;
+    font-family: Comfortaa, var(--default-font-family);
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 9;
+  }
+  .text-4 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    position: absolute;
+    width: 154px;
+    top: calc(50% - 0px);
+    left: calc(50% - -274.5px);
+    color: #ffffff;
+    font-family: Comfortaa, var(--default-font-family);
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 10;
+  }
+  .pic-4 {
+    position: relative;
+    width: 859.971px;
+    height: 7px;
+    margin: 338px 0 0 97px;
+    background: url(./assets/images/39530c61-4e52-4f08-a908-6aca802e529d.png)
+      no-repeat center;
+    background-size: cover;
+    border: 3px solid #ffffff;
+    z-index: 2;
+  }
+  .text-5 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 860px;
+    height: 27px;
+    margin: 63px 0 0 97px;
+    color: #ffffff;
+    font-family: Comfortaa, var(--default-font-family);
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 9px;
+    z-index: 4;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  .pic-5 {
+    position: relative;
+    width: 859.996px;
+    height: 10px;
+    margin: 61.5px 0 0 96.988px;
+    background: url(./assets/images/2480921b-7e49-4f65-9e47-f6a379508f88.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 3;
+  }
+  .img {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    top: 0;
+    left: 0;
+    background: url(./assets/images/999dd1d4eb20c8a0b36530067b0689131612480a.png)
+      no-repeat center;
+    background-size: cover;
+    opacity: 0.8100000023841858;
+    z-index: 1;
+  }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="pic">
+        <span class="text">La Forêt </span>
+        <div class="box">
+          <div class="wrapper"><div class="img"></div></div>
+          <span class="text-2">En savoir plus </span>
+        </div>
+      </div>
+      <div class="pic-2">
+        <span class="text-3">Les merveilles d’architectures</span>
+        <div class="box-2">
+          <div class="pic-3"></div>
+          <div class="img-2"></div>
+          <div class="pic-4"></div>
+        </div>
+        <div class="group">
+          <span class="text-4"
+            >Escalier en fer à cheval <br /><br />Symbole du château de
+            Fontainebleau, le célèbre escalier en fer à cheval est un ouvrage du
+            règne de Louis XIII.</span
+          ><span class="text-5"
+            >La galerie François Ier<br /><br />La galerie François- Ier est une
+            grande galerie d'apparat située au premier étage du château royal de
+            Fontainebleau.</span
+          ><span class="text-6"
+            >La galerie des cerfs<br /><br />Décorée de vues cavalières des
+            domaines de chasses royaux, cette vaste galerie de 74m de long et 7m
+            de large édifiée par Henri IV.</span
+          >
+        </div>
+      </div>
+      <div class="img-3">
+        <div class="img-4"></div>
+        <span class="text-7">François Ier</span
+        ><span class="text-8"
+          >Au 16e siècle, François Ier commence la construction d'une galerie
+          adjacente à l'appartement royal, offrant au souverain un espace privé
+          sur deux niveaux. Au premier étage, cette galerie permettait au Roi de
+          se promener avec des fenêtres donnant sur la cour de la Fontaine au
+          sud et le jardin de la Reine au nord. Au 18e siècle, des modifications
+          ont fermé ces fenêtres et supprimé le cabinet de retraite du Roi lors
+          de l'extension pour de nouveaux appartements pour Louis XVI.</span
+        ><span class="text-9">En savoir plus</span>
+      </div>
+      <div class="pic-5">
+        <div class="pic-6"></div>
+        <span class="text-a">Au Centre de L’intrigue</span>
+        <div class="group-2">
+          <div class="pic-7"></div>
+          <div class="pic-8"></div>
+          <div class="pic-9">
+            <span class="text-b">La Résidence Royale</span
+            ><span class="text-c">L’histoire de FontaineBleau</span>
+          </div>
+        </div>
+      </div>
+      <div class="box-3">
+        <div class="section">
+          <span class="text-d">Informations Pratiques</span
+          ><span class="text-e">Horaires</span>
+          <div class="box-4">
+            <span class="text-f">Adresse</span><span class="text-10"> </span>
+          </div>
+        </div>
+        <div class="section-2">
+          <div class="group-3">
+            <span class="text-11">Château<br /></span
+            ><span class="text-12">de 9h à 17h30<br />Fermé le lundi</span>
+          </div>
+          <span class="text-13"
+            >Place d'Armes<br />78000 Versailles<br />France</span
+          >
+          <div class="wrapper-2">
+            <span class="text-14">Domaine de Trianon<br /></span
+            ><span class="text-15">de 12h à 17h30<br />Fermé le lundi</span>
+          </div>
+        </div>
+        <div class="section-3">
+          <div class="section-4">
+            <span class="text-16">Parc<br /></span
+            ><span class="text-17">de 8h à 18h<br />Ouvert tous les jours</span>
+          </div>
+          <span class="text-18">Nous Contacter </span
+          ><span class="text-19">01 60 71 50 70</span>
+        </div>
+      </div>
+      <div class="section-5">
+        <span class="text-1a">Jardins<br /></span
+        ><span class="text-1b">de 8h à 18h<br />Ouvert tous les jours</span>
+      </div>
+    </div>
+  </body>
+</html>
+
