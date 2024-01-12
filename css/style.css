@@ -37,15 +37,15 @@
 /* Style de la page web */
 
 @keyframes animation {
-    from {
-        opacity: 0;
-        transform: translate(-50%, -40%);
-    }
+	from {
+		opacity: 0;
+		transform: translate(-50%, -40%);
+	}
 
-    to {
-        opacity: 1;
+	to {
+		opacity: 1;
 		transform: translate(-50%, -50%);
-    }
+	}
 }
 
 * {
@@ -70,14 +70,15 @@ a {
 	text-decoration: none;
 }
 
-.header-acceuil .nav-bar ul{
+.header-acceuil .nav-bar ul {
 	background-color: #505050;
 	display: flex;
 	flex-direction: row;
 	align-items: start;
 }
 
-.header-acceuil .nav-bar li, a {
+.header-acceuil .nav-bar li,
+a {
 	list-style: none;
 	font-size: 22px;
 	color: #f4f4f4;
@@ -85,7 +86,7 @@ a {
 	transition: .3s all;
 }
 
-.header-acceuil .nav-bar a:hover{
+.header-acceuil .nav-bar a:hover {
 	color: #f7af3e;
 	transition: .3s all;
 }
