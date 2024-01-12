@@ -1,11 +1,49 @@
+@font-face {
+  font-family: 'dynoregular';
+  src: url('font/dyno_regular-webfont.woff2') format('woff2'),
+       url('font/dyno_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'dynoitalic';
+  src: url('font/dyno_italic-webfont.woff2') format('woff2'),
+       url('font/dyno_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'dynobold_italic';
+  src: url('font/dyno_bold_italic-webfont.woff2') format('woff2'),
+       url('font/dyno_bold_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'dynobold';
+  src: url('font/dyno_bold-webfont.woff2') format('woff2'),
+       url('font/dyno_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* Style de la page web */
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "Dyno Regular";
-  background-color: #f3f3f3;
+  font-family: "dynoregular";
+  background-color: #f4f4f4;
 }
 
 .header {
