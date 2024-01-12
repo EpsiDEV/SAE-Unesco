@@ -1,129 +1,169 @@
 @font-face {
-  font-family: 'dynoregular';
-  src: url('font/dyno_regular-webfont.woff2') format('woff2'),
-       url('font/dyno_regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'dynoregular';
+	src: url('font/dyno_regular-webfont.woff2') format('woff2'),
+		url('font/dyno_regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
 @font-face {
-  font-family: 'dynoitalic';
-  src: url('font/dyno_italic-webfont.woff2') format('woff2'),
-       url('font/dyno_italic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'dynoitalic';
+	src: url('font/dyno_italic-webfont.woff2') format('woff2'),
+		url('font/dyno_italic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
 @font-face {
-  font-family: 'dynobold_italic';
-  src: url('font/dyno_bold_italic-webfont.woff2') format('woff2'),
-       url('font/dyno_bold_italic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'dynobold_italic';
+	src: url('font/dyno_bold_italic-webfont.woff2') format('woff2'),
+		url('font/dyno_bold_italic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
 @font-face {
-  font-family: 'dynobold';
-  src: url('font/dyno_bold-webfont.woff2') format('woff2'),
-       url('font/dyno_bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'dynobold';
+	src: url('font/dyno_bold-webfont.woff2') format('woff2'),
+		url('font/dyno_bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
 /* Style de la page web */
 
+@keyframes animation {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+
+    to {
+        opacity: 1;
+		transform: translate(-50%, -50%);
+    }
+}
+
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  font-family: "dynoregular";
-  background-color: #f4f4f4;
+	background-color: #f4f4f4;
+	font-family: "dynoregular";
 }
 
-.header {
-  width: 100%;
-  height: 80vh;
-
-  position: relative;
+.header-acceuil {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../assets/bg.png);
+	background-size: cover;
+	position: relative;
 }
 
-.header.image-background {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(10%);
-  background-size: cover;
+a {
+	text-decoration: none;
+}
+
+.header-acceuil .nav-bar ul{
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+}
+
+.header-acceuil .nav-bar li, a {
+	list-style: none;
+	font-size: 22px;
+	color: #f4f4f4;
+	padding: 20px 3%;
+	transition: .3s all;
+}
+
+.header-acceuil .nav-bar a:hover{
+	color: #ea5c0d;
+	transition: .3s all;
+}
+
+.header-acceuil .titre-principal {
+	position: absolute;
+	font-size: 9rem;
+	color: #f4f4f4;
+	text-shadow: 2px 2px 15px #000;
+	top: 55%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	animation: animation 1s ease-in-out;
 }
 
 .francois-page {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5rem;
 }
 
 .titre {
-  font-size: 6rem;
-  color: #000;
-  font-weight: 400;
-  margin-bottom: 1.5rem;
-  margin-left: 5%;
+	font-size: 6rem;
+	color: #000;
+	font-weight: 400;
+	margin-bottom: 1.5rem;
+	margin-left: 5%;
 }
 
 .space {
-  height: 5rem;
+	height: 5rem;
 }
 
-.textefran{
-  margin: 6% 20% 0% 5%;
-  letter-spacing: 2px;
-  font-size: 2.3rem;
+.textefran {
+	margin: 6% 20% 0% 5%;
+	letter-spacing: 2px;
+	font-size: 2.3rem;
 }
 
-.ensavoir{
-  width: 15rem;
-  height: 4rem;
-  background-color: rgb(234, 91, 12);
-  color:white;
-  align-content: center;
-  position: relative;
-  margin: 5% 10%;
-  transition: .3s all;
+.ensavoir {
+	width: 15rem;
+	height: 4rem;
+	background-color: rgb(234, 91, 12);
+	color: white;
+	align-content: center;
+	position: relative;
+	margin: 5% 10%;
+	transition: .3s all;
 }
 
 .ensavoir:hover {
-  cursor: pointer;
-  transform: translateY(-8px);
-  transition: .3s all;
+	cursor: pointer;
+	transform: translateY(-8px);
+	transition: .3s all;
 }
 
 .ensavoir p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .intriguepage {
-  margin-top: 10rem;
-  display: flex;
-  justify-content: center;
+	margin-top: 10rem;
+	display: flex;
+	justify-content: center;
 }
 
 .aucentredelintrigue {
-  font-size: 5rem;
+	font-size: 5rem;
 }
 
 .portrait {
-  width: 40rem;
-  margin-right: 3rem;
+	width: 40rem;
+	margin-right: 3rem;
 }
 
-.Foret{
-  background-image: "C:\Users\jawes\OneDrive\Bureau\Sae unesco2\SAE-Unesco\assets\Foret.png";
+.Foret {
+	background-image: "C:\Users\jawes\OneDrive\Bureau\Sae unesco2\SAE-Unesco\assets\Foret.png";
 }
