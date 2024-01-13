@@ -54,7 +54,7 @@
 }
 
 body {
-	background-color: #f4f4f4;
+	background-color: #333;
 	font-family: "dynoregular";
 }
 
@@ -84,6 +84,18 @@ a {
 	color: #f4f4f4;
 	padding: 20px 3%;
 	transition: .3s all;
+	position: relative;	
+}
+
+.header-acceuil .nav-bar a::after {
+	content: "";
+	position: absolute;
+	background-color: #f7af3e;
+	height: 2px;
+	width: 0%;
+	left: 0;
+	bottom: 0;
+	transition: .3s;
 }
 
 .header-acceuil .nav-bar a:hover {
@@ -91,11 +103,15 @@ a {
 	transition: .3s all;
 }
 
+.header-acceuil .nav-bar a:hover::after {
+	width: 100%;
+}
+
 .header-acceuil .titre-principal {
 	position: absolute;
 	font-size: 9rem;
 	color: #f4f4f4;
-	text-shadow: 2px 2px 15px #000;
+	text-shadow: 2px 2px 20px #333;
 	top: 55%;
 	left: 35%;
 	transform: translate(-50%, -50%);
