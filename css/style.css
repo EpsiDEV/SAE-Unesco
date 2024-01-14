@@ -239,7 +239,7 @@ a {
 	margin: 5% 0;
 	background-image: url(../assets/foret.png);
 	background-size: cover;
-	height: 100vh;
+	height: 90vh;
 	background-position: 50%;
 	display: flex;
 	flex-direction: column;
@@ -249,6 +249,7 @@ a {
 .foret h1{
 	font-size: 10rem;
 	color: #f4f4f4;
-	margin: 10% 5%;
+	margin-top: 5%;
+	margin-left: 5%;
 	text-shadow: 2px 2px 20px #333;
 }
