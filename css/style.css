@@ -70,6 +70,14 @@ p {
 	color: #f4f4f4;
 }
 
+.header-acceuil .nav-bar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
 .header-acceuil .nav-bar ul {
 	background-color: #505050;
 	display: flex;
