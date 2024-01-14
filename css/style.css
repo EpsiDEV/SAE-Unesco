@@ -140,7 +140,7 @@ a {
 .textefran {
 	margin: 6% 20% 0% 5%;
 	letter-spacing: 2px;
-	font-size: 2.3rem;
+	font-size: 1.8rem;
 }
 
 .ensavoir {
@@ -156,7 +156,7 @@ a {
 
 .ensavoir:hover {
 	cursor: pointer;
-	transform: translateY(-8px);
+	transform: scale(0.95);
 	transition: .3s all;
 }
 
@@ -168,13 +168,46 @@ a {
 	font-size: 20px;
 }
 
-.section-intrigue {
-	margin-top: 10rem;
-	display: flex;
-	justify-content: center;
-}
-
 .portrait {
 	width: 40rem;
 	margin-right: 3rem;
+}
+
+.centre_intrigue h2 {
+	color: #f4f4f4;
+	text-align: center;
+	margin: 10% 0;
+	font-size: 3rem;
+}
+
+.centre_intrigue .elements_intrigue {
+	display: flex;
+	justify-content: space-around;
+}
+
+.centre_intrigue .elements_intrigue p {
+	background-color: #333;
+	color: #f7af3e;
+	text-align: center;
+	font-size: 36px;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.centre_intrigue .elements_intrigue .residence_royale, .histoire_fontaibleau {
+	position: relative;
+}
+
+.centre_intrigue .elements_intrigue .residence_royale p {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 45%;
+	right: -50%;
+}
+
+.centre_intrigue .elements_intrigue .histoire_fontaibleau p {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 45%;
+	left: -10%;
 }
