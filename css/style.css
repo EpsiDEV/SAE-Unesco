@@ -165,9 +165,19 @@ a {
 
 .ensavoir:hover {
 	cursor: pointer;
-	transform: scale(0.95);
 	transition: .3s all;
 }
+
+.fa-arrow-right {
+	transition: .2s all;
+}
+
+.ensavoir:hover .fa-arrow-right{
+	cursor: pointer;
+	transition: .2s all;
+	transform: translateX(5px);
+}
+
 
 .ensavoir p {
 	position: absolute;
@@ -182,11 +192,15 @@ a {
 	margin-right: 3rem;
 }
 
+.centre_intrigue {
+	margin: 10% 0;
+}
+
 .centre_intrigue h2 {
 	color: #f4f4f4;
 	text-align: center;
-	margin: 10% 0;
 	font-size: 3rem;
+	margin: 10%;
 }
 
 .centre_intrigue .elements_intrigue {
@@ -219,4 +233,12 @@ a {
 	transform: translate(-50%, -50%);
 	top: 50%;
 	left: -10%;
+}
+
+.foret {
+	margin: 5% 0;
+	background-image: url(../assets/foret.png);
+	background-size: cover;
+	height: 100vh;
+	background-position: 50%;
 }
