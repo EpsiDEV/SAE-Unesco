@@ -66,6 +66,10 @@ a {
 	text-decoration: none;
 }
 
+p {
+	color: #f4f4f4;
+}
+
 .header-acceuil .nav-bar ul {
 	background-color: #505050;
 	display: flex;
@@ -89,7 +93,7 @@ a {
 	background-color: #f7af3e;
 	height: 2px;
 	width: 0%;
-	left: 0;
+	left: 50%;
 	bottom: 0;
 	transition: .3s;
 }
@@ -100,6 +104,7 @@ a {
 }
 
 .header-acceuil .nav-bar a:hover::after {
+	transform: translateX(-50%);
 	width: 100%;
 }
 
@@ -114,15 +119,15 @@ a {
 	animation: animation 1s ease-in-out;
 }
 
-.francois-page {
+.section-francois {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 5rem;
 }
 
-.titre {
+.titre-h2 {
 	font-size: 6rem;
-	color: #000;
+	color: #f4f4f4;
 	font-weight: 400;
 	margin-bottom: 1.5rem;
 	margin-left: 5%;
@@ -139,7 +144,7 @@ a {
 }
 
 .ensavoir {
-	width: 15rem;
+	width: 20rem;
 	height: 4rem;
 	background-color: rgb(234, 91, 12);
 	color: white;
@@ -160,23 +165,16 @@ a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	font-size: 20px;
 }
 
-.intriguepage {
+.section-intrigue {
 	margin-top: 10rem;
 	display: flex;
 	justify-content: center;
 }
 
-.aucentredelintrigue {
-	font-size: 5rem;
-}
-
 .portrait {
 	width: 40rem;
 	margin-right: 3rem;
-}
-
-.Foret {
-	background-image: "C:\Users\jawes\OneDrive\Bureau\Sae unesco2\SAE-Unesco\assets\Foret.png";
 }
