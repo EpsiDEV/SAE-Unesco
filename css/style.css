@@ -201,13 +201,13 @@ a {
 .centre_intrigue .elements_intrigue .residence_royale p {
 	position: absolute;
 	transform: translate(-50%, -50%);
-	top: 45%;
+	top: 50%;
 	right: -50%;
 }
 
 .centre_intrigue .elements_intrigue .histoire_fontaibleau p {
 	position: absolute;
 	transform: translate(-50%, -50%);
-	top: 45%;
+	top: 50%;
 	left: -10%;
 }
