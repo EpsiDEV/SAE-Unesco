@@ -62,7 +62,7 @@ p {
 	color: #f4f4f4;
 	transition: .3s all;
 	position: relative;
-	padding: 20px;
+	padding: 20px 2%;
 }
 
 .header-accueil .nav-bar a:hover {
