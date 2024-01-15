@@ -79,6 +79,7 @@ li {
 	position: absolute;
 	background-color: #f7af3e;
 	height: 2px;
+	border-radius: 10px;
 	width: 0%;
 	left: 50%;
 	bottom: 0;
@@ -221,6 +222,7 @@ li {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-bottom: 0;
 }
 
 .foret h1 {
@@ -233,7 +235,7 @@ li {
 
 .horaire {
 	color: white;
-	font-family: "Cicle Fina";
+	font-family: "Cicle Semi";
 }
 
 .footer {
@@ -269,7 +271,7 @@ li {
 }
 
 .social-icon__link:hover {
-	transform: translateY(-7px);
+	transform: translateY(-5px);
 	color: #f7af3e;
 }
 
