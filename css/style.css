@@ -32,6 +32,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: #f4f4f4;
 }
 
 p {
@@ -52,21 +53,36 @@ p {
 	display: flex;
 	flex-direction: row;
 	align-items: start;
+	gap: 20px;
 }
 
-.header-accueil .nav-bar li,
-a {
+.header-accueil .nav-bar a, li{
 	list-style: none;
 	font-size: 22px;
 	color: #f4f4f4;
-	padding: 25px;
 	transition: .3s all;
-	position: relative;	
+	position: relative;
+	padding: 20px;
 }
 
 .header-accueil .nav-bar a:hover {
 	color: #f7af3e;
 	transition: .3s all;
+}
+
+.header-accueil .nav-bar a::after {
+	content: "";
+	position: absolute;
+	background-color: #f7af3e;
+	height: 2px;
+	width: 0%;
+	left: 0;
+	bottom: 0;
+	transition: .3s;
+}
+
+.header-accueil .nav-bar a:hover::after {
+	width: 100%;
 }
 
 .header-accueil .titre-principal {
