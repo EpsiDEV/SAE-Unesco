@@ -1,5 +1,3 @@
-/* Style de la page web */
-
 @keyframes animation {
 	from {
 		opacity: 0;
@@ -12,6 +10,7 @@
 	}
 }
 
+/* Réglages de base */
 * {
 	margin: 0;
 	padding: 0;
@@ -21,6 +20,8 @@ body {
 	background-color: #333;
 	font-family: "Dyno Regular";
 }
+
+/* En tête de la page */
 
 .header-accueil {
 	width: 100%;
@@ -38,6 +39,8 @@ a {
 p {
 	color: #f4f4f4;
 }
+
+/* Menu de navigation  */
 
 .header-accueil .nav-bar {
 	position: fixed;
@@ -85,6 +88,8 @@ p {
 	transform: translateX(-50%);
 	width: 100%;
 }
+
+/* Le titre principal de la page */
 
 .header-accueil .titre-principal {
 	position: absolute;
