@@ -76,12 +76,13 @@ p {
 	background-color: #f7af3e;
 	height: 2px;
 	width: 0%;
-	left: 0;
+	left: 50%;
 	bottom: 0;
 	transition: .3s;
 }
 
 .header-accueil .nav-bar a:hover::after {
+	transform: translateX(-50%);
 	width: 100%;
 }
 
