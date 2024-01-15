@@ -59,7 +59,8 @@ p {
 	gap: 20px;
 }
 
-.header-accueil .nav-bar a, li{
+.header-accueil .nav-bar a,
+li {
 	list-style: none;
 	font-size: 22px;
 	color: #f4f4f4;
@@ -147,7 +148,7 @@ p {
 	transition: .2s all;
 }
 
-.ensavoir:hover .fa-arrow-right{
+.ensavoir:hover .fa-arrow-right {
 	cursor: pointer;
 	transition: .2s all;
 	transform: translateX(5px);
@@ -192,7 +193,8 @@ p {
 	border-radius: 5px;
 }
 
-.centre_intrigue .elements_intrigue .residence_royale, .histoire_fontaibleau {
+.centre_intrigue .elements_intrigue .residence_royale,
+.histoire_fontaibleau {
 	position: relative;
 }
 
@@ -221,7 +223,7 @@ p {
 	justify-content: space-between;
 }
 
-.foret h1{
+.foret h1 {
 	font-size: 10rem;
 	color: #f4f4f4;
 	margin-top: 5%;
@@ -229,57 +231,56 @@ p {
 	text-shadow: 2px 2px 20px #333;
 }
 
-.horaire{
+.horaire {
 	color: white;
 	font-family: "Cicle Fina";
 }
 
 .footer {
-position: relative;
-background: #505050;
-min-height: 100px;
-padding: 20px 50px;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+	position: relative;
+	background: #505050;
+	min-height: 100px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .social-icon,
 .menu {
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 10px 0;
-flex-wrap: wrap;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
 }
 
 .social-icon__item,
 .menu__item {
-list-style: none;
+	list-style: none;
 }
 
 .social-icon__link {
-font-size: 2rem;
-color: #fff;
-display: inline-block;
-transition: 0.5s;
+	font-size: 2rem;
+	color: #fff;
+	display: inline-block;
+	transition: 0.5s;
 }
 
 .social-icon__link:hover {
-transform: translateY(-7px);
-color: #f7af3e;
+	transform: translateY(-7px);
+	color: #f7af3e;
 }
 
 .menu__link {
-font-size: 1.2rem;
-color: #fff;
-display: inline-block;
-transition: 0.5s;
-text-decoration: none;
-opacity: 0.75;
-font-weight: 300;
+	font-size: 1.2rem;
+	color: #fff;
+	display: inline-block;
+	transition: 0.5s;
+	text-decoration: none;
+	opacity: 0.75;
+	font-weight: 300;
 }
 
 .menu__link:hover {
@@ -288,17 +289,18 @@ font-weight: 300;
 }
 
 .footer p {
-color: #fff;
-font-size: 1rem;
-font-weight: 300;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 300;
 }
 
 
 @keyframes animate {
-0% {
-	background-position-x: -1000rem;
-}
-100% {
-	background-positon-x: 0rem;
-}
+	0% {
+		background-position-x: -1000rem;
+	}
+
+	100% {
+		background-positon-x: 0rem;
+	}
 }
