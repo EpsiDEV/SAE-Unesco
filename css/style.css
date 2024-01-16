@@ -32,6 +32,10 @@ body {
 	position: relative;
 }
 
+.header-histoire {
+	background-image: url(../assets/histoire/bg_histoire.png);
+}
+
 a {
 	text-decoration: none;
 	color: #f4f4f4;
