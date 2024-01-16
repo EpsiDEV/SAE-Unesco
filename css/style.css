@@ -1,312 +1,429 @@
 @keyframes animation {
-	from {
-		opacity: 0;
-		transform: translate(-50%, -40%);
-	}
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
 
-	to {
-		opacity: 1;
-		transform: translate(-50%, -50%);
-	}
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* Réglages de base */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	background-color: #333;
-	font-family: "Dyno Regular";
+  background-color: #333;
+  font-family: "Dyno Regular";
 }
 
 /* En tête de la page */
 
 .header-accueil {
-	width: 100%;
-	height: 100vh;
-	background-image: url(../assets/bg.png);
-	background-size: cover;
-	position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/bg.png);
+  background-size: cover;
+  position: relative;
 }
 
 .header-histoire {
-	background-image: url(../assets/histoire/bg_histoire.png);
+  background-image: url(../assets/histoire/bg_histoire.png);
 }
 
 a {
-	text-decoration: none;
-	color: #f4f4f4;
+  text-decoration: none;
+  color: #f4f4f4;
 }
 
 p {
-	color: #f4f4f4;
+  color: #f4f4f4;
 }
 
 /* Menu de navigation  */
 
 .header-accueil .nav-bar {
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .header-accueil .nav-bar ul {
-	background-color: #505050;
-	display: flex;
-	flex-direction: row;
-	align-items: start;
-	gap: 20px;
+  background-color: #505050;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 20px;
 }
 
 .header-accueil .nav-bar a,
 li {
-	list-style: none;
-	font-size: 22px;
-	color: #f4f4f4;
-	transition: .3s all;
-	position: relative;
-	padding: 20px 2%;
+  list-style: none;
+  font-size: 22px;
+  color: #f4f4f4;
+  transition: 0.3s all;
+  position: relative;
+  padding: 20px 2%;
 }
 
 .header-accueil .nav-bar a:hover {
-	color: #f7af3e;
-	transition: .3s all;
+  color: #f7af3e;
+  transition: 0.3s all;
 }
 
 .header-accueil .nav-bar a::after {
-	content: "";
-	position: absolute;
-	background-color: #f7af3e;
-	height: 3px;
-	border-radius: 10px;
-	width: 0%;
-	left: 50%;
-	bottom: 0;
-	transition: .3s;
+  content: "";
+  position: absolute;
+  background-color: #f7af3e;
+  height: 3px;
+  border-radius: 10px;
+  width: 0%;
+  left: 50%;
+  bottom: 0;
+  transition: 0.3s;
 }
 
 .header-accueil .nav-bar a:hover::after {
-	transform: translateX(-50%);
-	width: 100%;
+  transform: translateX(-50%);
+  width: 100%;
 }
 
 /* Le titre principal de la page */
 
 .header-accueil .titre-principal {
-	position: absolute;
-	font-size: 9rem;
-	color: #f4f4f4;
-	text-shadow: 2px 2px 20px #333;
-	top: 55%;
-	left: 35%;
-	transform: translate(-50%, -50%);
-	animation: animation 1s ease-in-out;
+  position: absolute;
+  font-size: 9rem;
+  color: #f4f4f4;
+  text-shadow: 2px 2px 20px #333;
+  top: 55%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  animation: animation 1s ease-in-out;
 }
 
 .section-francois {
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
 }
 
 .titre-h2 {
-	font-size: 6rem;
-	color: #f4f4f4;
-	font-weight: 400;
-	margin-bottom: 1.5rem;
-	margin-left: 5%;
+  font-size: 6rem;
+  color: #f4f4f4;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  margin-left: 5%;
 }
 
 .space {
-	height: 5rem;
+  height: 5rem;
 }
 
 .textefran {
-	margin: 6% 20% 0% 5%;
-	letter-spacing: 2px;
-	font-size: 1.8rem;
-	font-family: "Cicle Fina";
+  margin: 6% 20% 0% 5%;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  font-family: "Cicle Fina";
 }
 
 .ensavoir {
-	width: 20rem;
-	height: 4rem;
-	background-color: rgb(234, 91, 12);
-	color: white;
-	align-content: center;
-	position: relative;
-	margin: 5% 10%;
-	transition: .3s all;
+  width: 20rem;
+  height: 4rem;
+  background-color: rgb(234, 91, 12);
+  color: white;
+  align-content: center;
+  position: relative;
+  margin: 5% 10%;
+  transition: 0.3s all;
 }
 
 .ensavoir:hover {
-	cursor: pointer;
-	transition: .3s all;
+  cursor: pointer;
+  transition: 0.3s all;
 }
 
 .fa-arrow-right {
-	transition: .2s all;
+  transition: 0.2s all;
 }
 
 .ensavoir:hover .fa-arrow-right {
-	cursor: pointer;
-	transition: .2s all;
-	transform: translateX(10px);
+  cursor: pointer;
+  transition: 0.2s all;
+  transform: translateX(10px);
 }
 
 .ensavoir p {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
 
 .portrait {
-	width: 40rem;
-	margin-right: 3rem;
+  width: 40rem;
+  margin-right: 3rem;
 }
 
 .centre_intrigue {
-	margin: 10% 0;
+  margin: 10% 0;
 }
 
 .centre_intrigue h2 {
-	color: #f4f4f4;
-	text-align: center;
-	font-size: 3rem;
-	margin: 10%;
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 3rem;
+  margin: 10%;
 }
 
 .centre_intrigue .elements_intrigue {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .centre_intrigue .elements_intrigue p {
-	background-color: #333;
-	color: #f7af3e;
-	text-align: center;
-	font-size: 36px;
-	padding: 15px;
-	border-radius: 5px;
+  background-color: #333;
+  color: #f7af3e;
+  text-align: center;
+  font-size: 36px;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .centre_intrigue .elements_intrigue .residence_royale,
 .histoire_fontaibleau {
-	position: relative;
+  position: relative;
 }
 
 .centre_intrigue .elements_intrigue .residence_royale p {
-	position: absolute;
-	transform: translate(-50%, -50%);
-	top: 50%;
-	right: -50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  right: -50%;
 }
 
 .centre_intrigue .elements_intrigue .histoire_fontaibleau p {
-	position: absolute;
-	transform: translate(-50%, -50%);
-	top: 50%;
-	left: -10%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: -10%;
 }
 
 .foret {
-	margin: 5% 0;
-	background-image: url(../assets/foret.png);
-	background-size: cover;
-	height: 90vh;
-	background-position: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-bottom: 0;
+  margin: 5% 0;
+  background-image: url(../assets/foret.png);
+  background-size: cover;
+  height: 90vh;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0;
 }
 
 .foret h1 {
-	font-size: 10rem;
-	color: #f4f4f4;
-	margin-top: 5%;
-	margin-left: 5%;
-	text-shadow: 2px 2px 20px #333;
+  font-size: 10rem;
+  color: #f4f4f4;
+  margin-top: 5%;
+  margin-left: 5%;
+  text-shadow: 2px 2px 20px #333;
 }
 
 .horaire {
-	color: white;
-	font-family: "Cicle Semi";
+  color: white;
+  font-family: "Cicle Semi";
 }
 
 .footer {
-	position: relative;
-	background: #505050;
-	min-height: 100px;
-	padding: 20px 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+  position: relative;
+  background: #505050;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .social-icon,
 .menu {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 10px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
 }
 
 .social-icon__item,
 .menu__item {
-	list-style: none;
+  list-style: none;
 }
 
 .social-icon__link {
-	font-size: 2rem;
-	color: #fff;
-	display: inline-block;
-	transition: 0.5s;
+  font-size: 2rem;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
 }
 
 .social-icon__link:hover {
-	transform: translateY(-5px);
-	color: #f7af3e;
+  transform: translateY(-5px);
+  color: #f7af3e;
 }
 
 .menu__link {
-	font-size: 1.2rem;
-	color: #fff;
-	display: inline-block;
-	transition: 0.5s;
-	text-decoration: none;
-	opacity: 0.75;
-	font-weight: 300;
+  font-size: 1.2rem;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
 }
 
 .menu__link:hover {
-	opacity: 1;
-	color: #f7af3e;
+  opacity: 1;
+  color: #f7af3e;
 }
 
 .footer p {
-	color: #fff;
-	font-size: 1rem;
-	font-weight: 300;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
-
 @keyframes animate {
-	0% {
-		background-position-x: -1000rem;
-	}
+  0% {
+    background-position-x: -1000rem;
+  }
 
-	100% {
-		background-positon-x: 0rem;
-	}
+  100% {
+    background-positon-x: 0rem;
+  }
+}
+
+/* Style de la page Histoire */
+
+.frise {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.frise .conteneur {
+  padding: 50px;
+  position: relative;
+  width: 50%;
+}
+
+.frise .conteneur .texte {
+  padding: 20px 30px;
+  background-color: #505050;
+  position: relative;
+  border-radius: 6px;
+  font-family: "Cicle Semi";
+}
+
+.frise .conteneur .texte h2 {
+  font-weight: 600;
+  margin-bottom: 2px;
+  font-size: 2rem;
+  font-family: "Dyno Bold";
+  color: #f7af3e;
+}
+
+.frise .conteneur .texte small {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 3px;
+  font-size: 1.7rem;
+  font-family: "Dyno Italic";
+  color: #ea5c0d;
+}
+
+.frise .conteneur .texte p {
+  font-size: 1.4rem;
+  font-family: "Cicle Gordita";
+}
+
+.frise .gauche {
+  left: 0%;
+}
+
+.frise .droite {
+  left: 50%;
+}
+
+.frise .conteneur .point-frise {
+  position: absolute;
+  font-size: 40px;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+}
+
+.frise .droite .point-frise {
+  left: -20px;
+}
+
+.frise::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #b94503;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+/* Style de la page Histoire responsive */
+
+@media screen and (max-width: 700px) {
+  .frise {
+    margin: 50px auto;
+  }
+
+  .frise::after {
+    left: 31px;
+  }
+
+  .frise .conteneur {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .frise .conteneur .texte h2 {
+    font-size: 18px;
+  }
+
+  .frise .conteneur .texte small {
+    font-size: 17px;
+  }
+
+  .frise .conteneur .texte p {
+    font-size: 15px;
+  }
+
+  .frise .conteneur .texte small {
+    margin-bottom: 10px;
+  }
+
+  .frise .droite {
+    left: 0;
+  }
+
+  .frise .conteneur .point-frise {
+    left: 10px;
+  }
 }
