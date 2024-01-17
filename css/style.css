@@ -300,6 +300,14 @@ li {
   font-weight: 300;
 }
 
+.footer .logos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 50px;
+}
+
 @keyframes animate {
   0% {
     background-position-x: -1000rem;
