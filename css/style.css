@@ -47,6 +47,10 @@ p {
 
 /* Menu de navigation  */
 
+.header-accueil {
+  position: relative;
+}
+
 .header-accueil .nav-bar {
   position: fixed;
   width: 100%;
@@ -54,6 +58,15 @@ p {
   left: 0;
   right: 0;
   z-index: 1000;
+}
+
+.header-accueil .menu-hamburger {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #f4f4f4;
 }
 
 .header-accueil .nav-bar ul {
@@ -552,7 +565,43 @@ li {
 
 /* Style su site responsive */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
+  /* Menu de navigation */
+  .nav-bar {
+    display: none;
+  }
+  .header-accueil .menu-hamburger {
+    display: block;
+  }
+
+  .header-accueil .nav-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin-left: -100%;
+  }
+
+  .header-accueil .mobile-menu {
+    margin-left: 0;
+    transition: 0.3s ease;
+  }
+
+  .header-accueil .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-accueil .nav-bar .choix-langues {
+    position: absolute;
+    flex-direction: column;
+    top: 70%;
+    left: 40%;
+  }
+
   .frise {
     margin: 50px auto;
   }

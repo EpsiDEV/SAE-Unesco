@@ -50,6 +50,7 @@ font-family: "Cicle Gordita Italic";
           <a href="../es/index.html"><img src="../assets/espagne.png" /></a>
         </div>
       </nav>
+      <i class="fa-solid fa-bars menu-hamburger"></i>
       <h1 class="titre-principal">Fontainebleau</h1>
     </header>
 
@@ -195,5 +196,14 @@ font-family: "Cicle Gordita Italic";
         <img class="logo_unesco" src="../assets/unesco.png" />
       </section>
     </footer>
+
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger");
+      const navBar = document.querySelector(".nav-bar");
+
+      menuHamburger.addEventListener("click", () => {
+        navBar.classList.toggle("mobile-menu");
+      });
+    </script>
   </body>
 </html>
