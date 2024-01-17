@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Haut de la page -->
@@ -35,10 +36,15 @@
       <h1 class="titre-principal">Histoire</h1>
     </header>
 
-    <div class="frise">
+    <div class="frise" data-aos="fade-down">
       <div class="conteneur gauche">
-        <i class="fa-solid fa-circle point-frise" style="color: #ea5b0c"></i>
-        <div class="texte">
+        <i
+          class="fa-solid fa-circle point-frise"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          style="color: #ea5b0c"
+        ></i>
+        <div class="texte" data-aos="fade-right" data-aos-duration="1500">
           <h2>Création du chateau</h2>
           <small>12ème siècle</small>
           <p>
@@ -61,8 +67,13 @@
       </div>
 
       <div class="conteneur droite" id="lien-francois">
-        <i class="fa-solid fa-circle point-frise" style="color: #ea5b0c"></i>
-        <div class="texte">
+        <i
+          class="fa-solid fa-circle point-frise"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          style="color: #ea5b0c"
+        ></i>
+        <div class="texte" data-aos="fade-left" data-aos-duration="1500">
           <h2>François 1er</h2>
           <small>1515 - 1547</small>
           <p>
@@ -88,8 +99,13 @@
       </div>
 
       <div class="conteneur gauche">
-        <i class="fa-solid fa-circle point-frise" style="color: #ea5b0c"></i>
-        <div class="texte">
+        <i
+          class="fa-solid fa-circle point-frise"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          style="color: #ea5b0c"
+        ></i>
+        <div class="texte" data-aos="fade-right" data-aos-duration="1500">
           <h2>Coeur des adieux de Henri IV</h2>
           <small>1589 - 1610</small>
           <p>
@@ -112,9 +128,14 @@
         </div>
       </div>
 
-      <div class="conteneur droite">
-        <i class="fa-solid fa-circle point-frise" style="color: #ea5b0c"></i>
-        <div class="texte">
+      <div class="conteneur droite" data-aos-duration="1500">
+        <i
+          class="fa-solid fa-circle point-frise"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          style="color: #ea5b0c"
+        ></i>
+        <div class="texte" data-aos="fade-left">
           <h2>Abdication Napoléon</h2>
           <small>1814</small>
           <p>
@@ -135,8 +156,13 @@
       </div>
 
       <div class="conteneur gauche">
-        <i class="fa-solid fa-circle point-frise" style="color: #ea5b0c"></i>
-        <div class="texte">
+        <i
+          class="fa-solid fa-circle point-frise"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          style="color: #ea5b0c"
+        ></i>
+        <div class="texte" data-aos="fade-right" data-aos-duration="1500">
           <h2>Abdication Charles X</h2>
           <small>1830</small>
           <p>
@@ -161,8 +187,13 @@
       </div>
 
       <div class="conteneur droite">
-        <i class="fa-solid fa-circle point-frise" style="color: #ea5b0c"></i>
-        <div class="texte">
+        <i
+          class="fa-solid fa-circle point-frise"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          style="color: #ea5b0c"
+        ></i>
+        <div class="texte" data-aos="fade-left" data-aos-duration="1500">
           <h2>Occupation Allemande</h2>
           <small>1940</small>
           <p>
@@ -190,8 +221,13 @@
       </div>
 
       <div class="conteneur gauche">
-        <i class="fa-solid fa-circle point-frise" style="color: #ea5b0c"></i>
-        <div class="texte">
+        <i
+          class="fa-solid fa-circle point-frise"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          style="color: #ea5b0c"
+        ></i>
+        <div class="texte" data-aos="fade-right" data-aos-duration="1500">
           <h2>De nos jours</h2>
           <p>
             De nos jours, le château de Fontainebleau demeure un joyau
@@ -216,5 +252,11 @@
         </div>
       </div>
     </div>
+
+    <!-- Import pour les animations au scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
