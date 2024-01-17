@@ -71,15 +71,18 @@ li {
   color: #f4f4f4;
   transition: 0.3s all;
   position: relative;
-  padding: 20px 2%;
 }
 
-.header-accueil .nav-bar a:hover {
+.header-accueil .nav-bar li {
+  padding: 20px;
+}
+
+.header-accueil .nav-bar li:hover a{
   color: #f7af3e;
   transition: 0.3s all;
 }
 
-.header-accueil .nav-bar a::after {
+.header-accueil .nav-bar li::after {
   content: "";
   position: absolute;
   background-color: #f7af3e;
@@ -87,12 +90,12 @@ li {
   border-radius: 10px;
   width: 0%;
   left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
   transition: 0.3s;
 }
 
-.header-accueil .nav-bar a:hover::after {
-  transform: translateX(-50%);
+.header-accueil .nav-bar li:hover::after {
   width: 100%;
 }
 
@@ -260,6 +263,7 @@ li {
   justify-content: center;
   align-items: center;
   margin: 10px 0;
+  gap: 20px;
 }
 
 .social-icon__item,
