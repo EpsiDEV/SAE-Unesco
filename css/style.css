@@ -427,3 +427,28 @@ li {
     left: 10px;
   }
 }
+
+.horaires {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 5%;
+  margin-left: 1rem;
+  margin-bottom: 5%
+}
+
+.horaires h1 {
+  font-size: 3rem;
+  color: #f4f4f4;
+  margin-top: 5%;
+  margin-left: 2rem;
+  margin-bottom: 3%;
+  text-shadow: 2px 2px 20px #333;
+}
+
+.horaires h2 {
+  color: #f7af3e;
+  /*add the right spacing and sizing responsively */
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-left: 2rem
+}
