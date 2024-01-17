@@ -416,52 +416,6 @@ li {
   z-index: -1;
 }
 
-/* Style de la page Histoire responsive */
-
-@media screen and (max-width: 700px) {
-  .frise {
-    margin: 50px auto;
-  }
-
-  .frise::after {
-    left: 31px;
-  }
-
-  .frise .conteneur {
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 25px;
-  }
-
-  .frise .conteneur .texte {
-    padding: 15px;
-  }
-
-  .frise .conteneur .texte h2 {
-    font-size: 20px;
-  }
-
-  .frise .conteneur .texte small {
-    font-size: 17px;
-  }
-
-  .frise .conteneur .texte p {
-    font-size: 16px;
-  }
-
-  .frise .conteneur .texte small {
-    margin-bottom: 10px;
-  }
-
-  .frise .droite {
-    left: 0;
-  }
-
-  .frise .conteneur .point-frise {
-    left: 10px;
-  }
-}
-
 .horaires {
   font-size: 1rem;
   color: #fff;
@@ -594,4 +548,50 @@ li {
 .fin-jardins .element p {
   font-size: 19px;
   font-family: "Cicle Fina";
+}
+
+/* Style su site responsive */
+
+@media screen and (max-width: 720px) {
+  .frise {
+    margin: 50px auto;
+  }
+
+  .frise::after {
+    left: 31px;
+  }
+
+  .frise .conteneur {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .frise .conteneur .texte {
+    padding: 15px;
+  }
+
+  .frise .conteneur .texte h2 {
+    font-size: 20px;
+  }
+
+  .frise .conteneur .texte small {
+    font-size: 17px;
+  }
+
+  .frise .conteneur .texte p {
+    font-size: 16px;
+  }
+
+  .frise .conteneur .texte small {
+    margin-bottom: 10px;
+  }
+
+  .frise .droite {
+    left: 0;
+  }
+
+  .frise .conteneur .point-frise {
+    left: 10px;
+  }
 }
