@@ -1,17 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visiter</title>
-</head>
-<body>
-    <h1>Jardin</h1>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jardins</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../assets/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/a/fFdx9aaQTqZZ01nqPsTAj0nmjQRRR3uMREwFN1QZtpvC92BnjoXvE3Ire9407myIbd2392Uj"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- Haut de page -->
+    <header class="header-accueil header-jardins">
+      <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="actus.html">News</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="histoire.html">History</a></li>
+            <li><a href="jardin.html">Garden</a></li>
+        </ul>
+      </nav>
+      <h1 class="titre-principal">Garden</h1>
+    </header>
 
-<!--
-    animation: blinker 1ms ease-in-out infinite;
-}
-@keyframes b {50% {opacity: 0;}}
--->
+    <main class="conteneur-jardins">
+      <div class="element">
+        <img src="../assets/jardins/etang_carpes.png" />
+        <h3>Carp pond</h3>
+        <p>
+            Facing south, l'étang aux carpes owes its name to the famous
+            whose presence in Fontainebleau has been attested since Henry IV.
+        </p>
+      </div>
+
+      <div class="element">
+        <img src="../assets/jardins/grotte_pins.png" />
+        <h3>Pine grotto</h3>
+        <p>
+            An early example of an artificial grotto in France, the "grotte des pins
+            "the end of the Louis XV wing built in place of the Ulysses
+            wing of the Galerie d'Ulysse.
+        </p>
+      </div>
+
+      <div class="element">
+        <img src="../assets/jardins/grand_parterre.png" />
+        <h3>The Great Flowerbed</h3>
+        <p>
+            The creation of the Great Flowerbed between 1660 and 1664 - the largest in Europe,
+            with its 14 hectares - by André Le Nôtre and Louis Le Vau, testifies to the
+            Louis XIV's desire to clarify space at Fontainebleau.
+        </p>
+      </div>
+    </main>
+
+    <div class="parc">
+      <img src="../assets/jardins/parc.png" />
+      <h3>The Park</h3>
+      <p>
+        Extending beyond the slope of the Bassin des Cascades, the park once marked
+        the boundaries of the royal estate to the east. From the village
+        Avon, it was crossed by the main access road to the château. Its
+        current configuration, the organization of the network of cascatelles and
+        is the result of the creation, under Henri IV, of a large canal
+        nearly 1,200 meters long (1606-1609) and 40 meters wide.
+        Initially planted with over sixty thousand trees, including rows of
+        rows of white poplars, oaks and fruit trees, this "closed park
+        park" and its canal were the pride of the king, who supervised the
+        construction. In 1609, it took more than a week to fill the canal, and by autumn
+        and by autumn, the king was sailing through it.
+      </p>
+    </div>
+
+    <div class="fin-jardins">
+      <div class="element">
+        <img src="../assets/jardins/cour_offices.png" />
+        <h3>Courtyard of Offices/Henri IV quarter</h3>
+        <p>
+            This vast ensemble of three sandstone, brick and rubble stone wings
+            stone, this forecourt demonstrates Henri IV's ambition to create a new
+            access to the château from the town.
+        </p>
+      </div>
+
+      <div class="element">
+        <img src="../assets/jardins/porte_baptistere.png" />
+        <h3>The Baptistery door</h3>
+        <p>
+            It was Henri IV, the great builder, who, around 1606, had this triumphal gateway
+            triumphal gate surmounted by a dome, giving the oval courtyard an eastern
+            opening to the east.
+        </p>
+      </div>
+    </div>
+
+    <section class="horaires">
+      <h1>Here are the times:</h1>
+      <a
+        href="https://www.chateaudefontainebleau.fr/preparez-votre-visite/horaires-et-tarifs/#horaire"
+        ><h2><i class="fa-solid fa-arrow-right"></i> Link to timetables</h2>
+      </a>
+    </section>
+
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.facebook.com/chateaufontainebleau"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.linkedin.com/company/chateau-de-fontainebleau/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://twitter.com/CFontainebleau"
+            target="_blank"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.instagram.com/chateaufontainebleau"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.youtube.com/channel/UCuHsrpyGJjGPixHWu7yrDSQ"
+            target="_blank"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.pinterest.com/chfontainebleau"
+            target="_blank"
+          >
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+        </li>
+      </ul>
+      <p>&copy;2023-2024 BUT Informatique</p>
+      <section class="logos">
+        <img class="logo_mcn" src="../assets/mcn.png" />
+        <img class="logo_iut" src="../assets/logo.png" />
+        <a href="https://whc.unesco.org/fr/list/160" target="_blank"
+          ><img class="logo_unesco" src="../assets/unesco.png"
+        /></a>
+      </section>
+    </footer>
+  </body>
+</html>
