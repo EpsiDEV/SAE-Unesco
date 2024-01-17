@@ -354,6 +354,11 @@ li {
   font-family: "Cicle Gordita";
 }
 
+.frise .conteneur .texte img {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
 .frise .gauche {
   left: 0%;
 }
@@ -403,6 +408,10 @@ li {
     padding-right: 25px;
   }
 
+  .frise .conteneur .texte {
+    padding: 15px;
+  }
+
   .frise .conteneur .texte h2 {
     font-size: 20px;
   }
@@ -433,7 +442,7 @@ li {
   color: #fff;
   margin-top: 5%;
   margin-left: 1rem;
-  margin-bottom: 5%
+  margin-bottom: 5%;
 }
 
 .horaires h1 {
@@ -450,5 +459,5 @@ li {
   /*add the right spacing and sizing responsively */
   font-size: 2rem;
   margin-top: 3rem;
-  margin-left: 2rem
+  margin-left: 2rem;
 }
