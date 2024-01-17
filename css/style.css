@@ -99,6 +99,19 @@ li {
   width: 100%;
 }
 
+.header-accueil .nav-bar .choix-langues {
+  position: absolute;
+  right: -3%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+}
+
+.header-accueil .nav-bar .choix-langues img {
+  width: 50px;
+}
+
 /* Le titre principal de la page */
 
 .header-accueil .titre-principal {
