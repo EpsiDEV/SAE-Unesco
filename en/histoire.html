@@ -37,6 +37,9 @@
           <a href="#"><img src="../assets/royaume-uni.png" /></a>
           <a href="../es/histoire.html"><img src="../assets/espagne.png" /></a>
         </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars" style="color: #f6f5f4"></i>
+        </div>
       </nav>
       <h1 class="titre-principal">History</h1>
     </header>
@@ -332,6 +335,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      function toggleMenu() {
+        var navList = document.querySelector(".header-accueil .nav-bar ul");
+        navList.classList.toggle("active");
+      }
     </script>
   </body>
 </html>

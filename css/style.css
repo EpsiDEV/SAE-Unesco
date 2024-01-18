@@ -578,6 +578,10 @@ li {
     top: 50%;
   }
 
+  .header-accueil .nav-bar {
+    position: relative;
+  }
+
   .header-accueil .nav-bar ul {
     display: none;
     flex-direction: column;
@@ -604,11 +608,86 @@ li {
 
   .header-accueil .nav-bar .menu-icon {
     display: block;
+    width: 40px;
   }
 
   .menu-icon .fa-bars {
     font-size: 40px;
     margin: 10px;
+  }
+
+  .section-francois img {
+    display: none;
+  }
+
+  .section-francois .partie-gauche h2 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+
+  .section-francois p {
+    font-size: 16px;
+  }
+
+  .ensavoir {
+    width: 15rem;
+    height: 3rem;
+    align-self: flex-start;
+  }
+
+  .ensavoir p {
+    font-size: 14px;
+  }
+
+  .centre_intrigue .elements_intrigue {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .centre_intrigue .elements_intrigue img {
+    width: 100%;
+  }
+
+  .centre_intrigue .elements_intrigue p {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .centre_intrigue .elements_intrigue .residence_royale p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  .centre_intrigue .elements_intrigue .histoire_fontaibleau p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  .foret {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .foret h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+
+  .horaires h1 {
+    font-size: 1.2rem;
+    text-align: start;
+  }
+
+  .horaires a h2 {
+    font-size: 1.1rem;
+  }
+
+  .footer .logos {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .frise {

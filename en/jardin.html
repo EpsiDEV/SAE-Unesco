@@ -35,6 +35,9 @@
           <a href="#"><img src="../assets/royaume-uni.png" /></a>
           <a href="../es/jardin.html"><img src="../assets/espagne.png" /></a>
         </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars" style="color: #f6f5f4"></i>
+        </div>
       </nav>
       <h1 class="titre-principal">Garden</h1>
     </header>
@@ -185,5 +188,12 @@
         /></a>
       </section>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        var navList = document.querySelector(".header-accueil .nav-bar ul");
+        navList.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

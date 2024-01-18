@@ -49,6 +49,9 @@ font-family: "Cicle Gordita Italic";
           <a href="#"><img src="../assets/royaume-uni.png" /></a>
           <a href="../es/index.html"><img src="../assets/espagne.png" /></a>
         </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars" style="color: #f6f5f4"></i>
+        </div>
       </nav>
       <h1 class="titre-principal">Fontainebleau</h1>
     </header>
@@ -56,34 +59,27 @@ font-family: "Cicle Gordita Italic";
     <!-- Petite présentation concernant Francoir 1er -->
 
     <section class="section-francois">
-      <div style="width: 100%; overflow: auto">
-        <div style="float: left; width: 55%">
-          <!-- Partie gauche -->
-          <div class="rectangle"></div>
-          <h2 class="titre-h2">François 1st</h2>
-          <p class="textefran">
-            In the 16th century, François I began construction of a gallery
-            adjacent to the royal apartment, giving the sovereign a private
-            private space on two levels. On the second floor, this gallery
-            allowed the King windows overlooking the Cour de la Fontaine to the
-            south and the
-          </p>
-
-          <a href="histoire.html#lien-francois">
-            <div class="ensavoir">
-              <p>Read more <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-          </a>
-        </div>
-        <div style="float: right">
-          <!-- PARTIE DROITE -->
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/8/87/Fran%C3%A7ois_Ier_Louvre.jpg"
-            alt="Portrait de François 1er"
-            class="portrait"
-          />
-        </div>
+      <div class="partie-gauche">
+        <h2>François 1st</h2>
+        <p>
+          In the 16th century, François I began construction of a gallery
+          adjacent to the royal apartment, giving the sovereign a private
+          private space on two levels. On the second floor, this gallery allowed
+          the King windows overlooking the Cour de la Fontaine to the south and
+          the
+        </p>
+        <a href="histoire.html#lien-francois">
+          <div class="ensavoir">
+            <p>Read more <i class="fa-solid fa-arrow-right"></i></p>
+          </div>
+        </a>
       </div>
+      <!-- PARTIE DROITE -->
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/8/87/Fran%C3%A7ois_Ier_Louvre.jpg"
+        alt="Portrait de François 1er"
+        class="portrait"
+      />
     </section>
 
     <!-- Au centre de l'intrigue -->
@@ -190,5 +186,12 @@ font-family: "Cicle Gordita Italic";
         <img class="logo_unesco" src="../assets/unesco.png" />
       </section>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        var navList = document.querySelector(".header-accueil .nav-bar ul");
+        navList.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
