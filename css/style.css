@@ -49,6 +49,7 @@ p {
 
 .header-accueil {
   position: relative;
+  margin-bottom: 10rem;
 }
 
 .header-accueil .nav-bar {
@@ -118,6 +119,10 @@ li {
   width: 100%;
 }
 
+.header-accueil .nav-bar .menu-icon {
+  display: none;
+}
+
 /* Le titre principal de la page */
 
 .header-accueil .titre-principal {
@@ -131,29 +136,15 @@ li {
   animation: animation 1s ease-in-out;
 }
 
+/* Section Francois 1er */
+
 .section-francois {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5rem;
+  display: grid;
 }
 
-.titre-h2 {
-  font-size: 6rem;
-  color: #f4f4f4;
-  font-weight: 400;
-  margin-bottom: 1.5rem;
-  margin-left: 5%;
-}
-
-.space {
-  height: 5rem;
-}
-
-.textefran {
-  margin: 6% 20% 0% 5%;
-  letter-spacing: 2px;
-  font-size: 1.8rem;
-  font-family: "Cicle Fina";
+.section-francois .partie-gauche {
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .ensavoir {
@@ -441,7 +432,6 @@ li {
 
 .horaires h2 {
   color: #f7af3e;
-  /*add the right spacing and sizing responsively */
   font-size: 2rem;
   margin-top: 3rem;
   margin-left: 2rem;
@@ -450,6 +440,7 @@ li {
 .logo_mcn {
   height: 5rem;
 }
+
 .logo_iut {
   height: 5rem;
   width: 5rem;
@@ -559,6 +550,46 @@ li {
 /* Style su site responsive */
 
 @media screen and (max-width: 900px) {
+
+  .header-accueil .titre-principal {
+    font-size: 3rem;
+    left: 50%;
+    top: 50%;
+  }
+
+  .header-accueil .nav-bar ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .header-accueil .nav-bar .choix-langues {
+    gap: 10px;
+    margin: 5px;
+  }
+
+  .header-accueil .nav-bar .choix-langues img {
+    width: 35px;
+  }
+
+  .header-accueil .nav-bar ul.active {
+    display: flex;
+  }
+
+  .header-accueil .nav-bar .menu-icon {
+    display: block;
+  }
+
+  .menu-icon .fa-bars {
+    font-size: 40px;
+    margin: 10px;
+  }
+
   .frise {
     margin: 50px auto;
   }
