@@ -140,11 +140,33 @@ li {
 
 .section-francois {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px;
 }
 
 .section-francois .partie-gauche {
+  display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.section-francois .partie-gauche h2 {
+  align-self: center;
+  font-size: 3rem;
+  color: #ea5c0d;
+}
+
+.section-francois p {
+  font-family: "Cicle Fina";
+  font-size: 30px;
+}
+
+.section-francois .partie-gauche a {
+  align-self: flex-start;
+}
+
+.section-francois img {
+  margin-left: 50px;
 }
 
 .ensavoir {
@@ -550,7 +572,6 @@ li {
 /* Style su site responsive */
 
 @media screen and (max-width: 900px) {
-
   .header-accueil .titre-principal {
     font-size: 3rem;
     left: 50%;
