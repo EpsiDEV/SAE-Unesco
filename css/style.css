@@ -731,4 +731,51 @@ li {
   .frise .conteneur .point-frise {
     left: 10px;
   }
+
+  /* Style de la page responsive Jardins */
+
+  .conteneur-jardins {
+    flex-direction: column;
+    width: 100%;
+    margin: 5rem 0;
+    align-items: center;
+  }
+
+  .conteneur-jardins .element {
+    width: 80vw;
+    margin-bottom: 3rem;
+  }
+
+  .parc {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .parc img {
+    width: 100vw;
+  }
+
+  .parc p {
+    font-size: 17px;
+  }
+
+  .fin-jardins {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .fin-jardins .element {
+    width: 80vw;
+    margin-bottom: 3rem;
+  }
+
+  .fin-jardins .element h3 {
+    font-size: 22px;
+  }
+
+  .fin-jardins .element p {
+    font-size: 17px;
+  }
 }
