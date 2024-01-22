@@ -569,6 +569,10 @@ li {
   font-family: "Cicle Fina";
 }
 
+.header-architecture {
+  background-image: url(../assets/architecture/bg.png);
+}
+
 /* Style su site responsive */
 
 @media screen and (max-width: 900px) {
