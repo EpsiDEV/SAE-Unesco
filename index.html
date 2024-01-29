@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirection...</title>
+    <script type="text/javascript">
+        if (navigator.browserLanguage) {
+            var language = navigator.browserLanguage;
+        } else {
+            var language = navigator.language;
+        }
+
+        if (language.indexOf('fr') > -1) {
+            document.location.href = 'fr/index.html';
+        } else if (language.indexOf('es') > -1) {
+            document.location.href = 'es/index.html';
+        } else {
+            document.location.href = 'en/index.html';
+        }
+    </script>
+</head>
+</html>
