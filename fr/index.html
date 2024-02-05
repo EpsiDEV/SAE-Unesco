@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Fontainebleau - UNESCO" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://epsidev.github.io/SAE-Unesco" />
+    <meta
+      property="og:image"
+      content="https://www.mydailydriver.fr/img/excursion/21/banner/crop/fontainebleau-castle-5c6440962858f.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Un site tout simplement incroyable réalisé par 4 étudiants en BUT Informatique qui va révolutionner le monde numérique et la façon dont nous utilisons la technologique."
+    />
+    <meta name="theme-color" content="#FF0000" />
+    <title>Accueil - Fontainebleau</title>
+    <link rel="icon" href="../assets/logo.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/a/fFdx9aaQTqZZ01nqPsTAj0nmjQRRR3uMREwFN1QZtpvC92BnjoXvE3Ire9407myIbd2392Uj"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Fontainebleau - UNESCO" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://epsidev.github.io/SAE-Unesco" />
-  <meta property="og:image" content="https://www.mydailydriver.fr/img/excursion/21/banner/crop/fontainebleau-castle-5c6440962858f.jpg" />
-  <meta property="og:description" content="Un site tout simplement incroyable réalisé par 4 étudiants en BUT Informatique qui va révolutionner le monde numérique et la façon dont nous utilisons la technologique." />
-  <meta name="theme-color" content="#FF0000">
-  <title>Accueil - Fontainebleau</title>
-  <link rel="icon" href="../assets/logo.png" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://db.onlinewebfonts.com/a/fFdx9aaQTqZZ01nqPsTAj0nmjQRRR3uMREwFN1QZtpvC92BnjoXvE3Ire9407myIbd2392Uj"
-    rel="stylesheet" type="text/css" />
-</head>
-
-<!-- 
+  <!-- 
 font-family: "Dyno Regular";
 font-family: "Dyno Bold";
 font-family: "Dyno Italic";
@@ -32,138 +44,162 @@ font-family: "Cicle Fina Italic";
 font-family: "Cicle Gordita Italic";
 -->
 
-<body>
-  <!-- Le haut de page -->
+  <body>
+    <!-- Le haut de page -->
 
-  <header class="header-accueil">
-    <nav class="nav-bar">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="actus.html">Actualités</a></li>
-        <li><a href="architecture.html">Architecture</a></li>
-        <li><a href="histoire.html">Histoire</a></li>
-        <li><a href="jardin.html">Jardins</a></li>
-      </ul>
-      <div class="choix-langues">
-        <a href="#"><img src="../assets/france.png" /></a>
-        <a href="../en/index.html"><img src="../assets/royaume-uni.png" /></a>
-        <a href="../es/index.html"><img src="../assets/espagne.png" /></a>
+    <header class="header-accueil">
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="plan.html">Plan</a></li>
+          <li><a href="architecture.html">Architecture</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="jardin.html">Jardins</a></li>
+        </ul>
+        <div class="choix-langues">
+          <a href="#"><img src="../assets/france.png" /></a>
+          <a href="../en/index.html"><img src="../assets/royaume-uni.png" /></a>
+          <a href="../es/index.html"><img src="../assets/espagne.png" /></a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars" style="color: #f6f5f4"></i>
+        </div>
+      </nav>
+      <h1 class="titre-principal">Fontainebleau</h1>
+    </header>
+
+    <!-- Petite présentation concernant Francoir 1er -->
+
+    <section class="section-francois">
+      <div class="partie-gauche">
+        <h2>François 1er</h2>
+        <p>
+          Au 16e siècle, François Ier commence la construction d'une galerie
+          adjacente à l'appartement royal, offrant au souverain un espace privé
+          sur deux niveaux. Au premier étage, cette galerie permettait au Roi de
+          se promener avec des fenêtres donnant sur la cour de la Fontaine au
+          sud et le jardin de la Reine au nord. Au 18e siècle, des modifications
+          ont fermé ces fenêtres et supprimé le cabinet de retraite du Roi lors
+          de l'extension pour de nouveaux appartements pour Louis XVI.
+        </p>
+        <a href="histoire.html#lien-francois">
+          <div class="ensavoir">
+            <p>En savoir plus <i class="fa-solid fa-arrow-right"></i></p>
+          </div>
+        </a>
       </div>
-      <div class="menu-icon" onclick="toggleMenu()">
-        <i class="fa-solid fa-bars" style="color: #f6f5f4"></i>
+      <img src="../assets/francois.png" />
+    </section>
+
+    <!-- Au centre de l'intrigue -->
+
+    <section class="centre_intrigue">
+      <h2>Au centre de l'intrigue</h2>
+      <div class="elements_intrigue">
+        <div class="residence_royale">
+          <img src="../assets/residence_royale.png" />
+          <p>
+            La résidence <br />
+            royale
+          </p>
+        </div>
+        <div class="histoire_fontaibleau">
+          <a href="histoire.html#lien-napoleon">
+            <img src="../assets/napoleon.png" />
+            <p>
+              L'histoire de <br />
+              Fontainebleau
+            </p>
+          </a>
+        </div>
       </div>
-    </nav>
-    <h1 class="titre-principal">Fontainebleau</h1>
-  </header>
+    </section>
 
-  <!-- Petite présentation concernant Francoir 1er -->
+    <!-- Section Forêt -->
 
-  <section class="section-francois">
-    <div class="partie-gauche">
-      <h2>François 1er</h2>
-      <p>
-        Au 16e siècle, François Ier commence la construction d'une galerie
-        adjacente à l'appartement royal, offrant au souverain un espace privé
-        sur deux niveaux. Au premier étage, cette galerie permettait au Roi de
-        se promener avec des fenêtres donnant sur la cour de la Fontaine au
-        sud et le jardin de la Reine au nord. Au 18e siècle, des modifications
-        ont fermé ces fenêtres et supprimé le cabinet de retraite du Roi lors
-        de l'extension pour de nouveaux appartements pour Louis XVI.
-      </p>
-      <a href="histoire.html#lien-francois">
+    <section class="foret">
+      <h1>La Forêt</h1>
+      <a href="">
         <div class="ensavoir">
           <p>En savoir plus <i class="fa-solid fa-arrow-right"></i></p>
         </div>
       </a>
-    </div>
-    <img src="../assets/francois.png" />
-  </section>
-
-  <!-- Au centre de l'intrigue -->
-
-  <section class="centre_intrigue">
-    <h2>Au centre de l'intrigue</h2>
-    <div class="elements_intrigue">
-      <div class="residence_royale">
-        <img src="../assets/residence_royale.png" />
-        <p>
-          La résidence <br />
-          royale
-        </p>
-      </div>
-      <div class="histoire_fontaibleau">
-        <a href="histoire.html#lien-napoleon">
-          <img src="../assets/napoleon.png" />
-          <p>
-            L'histoire de <br />
-            Fontainebleau
-          </p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Forêt -->
-
-  <section class="foret">
-    <h1>La Forêt</h1>
-    <a href="">
-      <div class="ensavoir">
-        <p>En savoir plus <i class="fa-solid fa-arrow-right"></i></p>
-      </div>
-    </a>
-  </section>
-
-  <section class="horaires">
-    <h1>Voici les horaires pour le château :</h1>
-    <a href="https://www.chateaudefontainebleau.fr/preparez-votre-visite/horaires-et-tarifs/#horaire">
-      <h2><i class="fa-solid fa-arrow-right"></i> Lien vers les horaires</h2>
-    </a>
-  </section>
-
-  <footer class="footer">
-    <ul class="social-icon">
-      <li class="social-icon__item">
-        <a class="social-icon__link" href="https://www.facebook.com/chateaufontainebleau" target="_blank">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-      </li>
-      <li class="social-icon__item">
-        <a class="social-icon__link" href="https://www.linkedin.com/company/chateau-de-fontainebleau/" target="_blank">
-          <i class="fa-brands fab fab fa-linkedin-in"></i>
-        </a>
-      </li>
-      <li class="social-icon__item">
-        <a class="social-icon__link" href="https://www.instagram.com/chateaufontainebleau" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </li>
-      <li class="social-icon__item">
-        <a class="social-icon__link" href="https://www.youtube.com/channel/UCuHsrpyGJjGPixHWu7yrDSQ" target="_blank">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-      </li>
-      <li class="social-icon__item">
-        <a class="social-icon__link" href="https://www.pinterest.com/chfontainebleau" target="_blank">
-          <i class="fa-brands fa-pinterest"></i>
-        </a>
-      </li>
-    </ul>
-    <p>2023-2024 BUT Informatique</p>
-    <section class="logos">
-      <img class="logo_mcn" src="../assets/mcn.png" />
-      <a href="https://iut.univ-gustave-eiffel.fr/" target="_blank"><img class="logo_iut"
-          src="../assets/logo.png" /></a>
-      <a href="https://whc.unesco.org/fr/list/160" target="_blank"><img class="logo_unesco"
-          src="../assets/unesco.png" /></a>
     </section>
-  </footer>
 
-  <script>
-    function toggleMenu() {
-      var navList = document.querySelector(".header-accueil .nav-bar ul");
-      navList.classList.toggle("active");
-    }
-  </script>
-</body>
+    <section class="horaires">
+      <h1>Voici les horaires pour le château :</h1>
+      <a
+        href="https://www.chateaudefontainebleau.fr/preparez-votre-visite/horaires-et-tarifs/#horaire"
+      >
+        <h2><i class="fa-solid fa-arrow-right"></i> Lien vers les horaires</h2>
+      </a>
+    </section>
+
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.facebook.com/chateaufontainebleau"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.linkedin.com/company/chateau-de-fontainebleau/"
+            target="_blank"
+          >
+            <i class="fa-brands fab fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.instagram.com/chateaufontainebleau"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.youtube.com/channel/UCuHsrpyGJjGPixHWu7yrDSQ"
+            target="_blank"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.pinterest.com/chfontainebleau"
+            target="_blank"
+          >
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+        </li>
+      </ul>
+      <p>2023-2024 BUT Informatique</p>
+      <section class="logos">
+        <img class="logo_mcn" src="../assets/mcn.png" />
+        <a href="https://iut.univ-gustave-eiffel.fr/" target="_blank"
+          ><img class="logo_iut" src="../assets/logo.png"
+        /></a>
+        <a href="https://whc.unesco.org/fr/list/160" target="_blank"
+          ><img class="logo_unesco" src="../assets/unesco.png"
+        /></a>
+      </section>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        var navList = document.querySelector(".header-accueil .nav-bar ul");
+        navList.classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>
