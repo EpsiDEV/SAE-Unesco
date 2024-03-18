@@ -17,6 +17,27 @@
 
 <body>
   <!-- Haut de la page -->
+  <script>
+    function readMore(i) {
+      var dots = document.getElementById("dots" + i);
+      var moreText = document.getElementById("more" + i);
+      var lien = document.getElementById("lien" + i);
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        lien.innerHTML = "Lire plus";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        lien.innerHTML = "Lire moins";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+
+  <style>
+    #more1, #more2, #more3, #more4, #more5, #more6, #more7 {display: none;}
+  </style>
 
   <header class="header-accueil header-histoire">
     <nav class="nav-bar">
@@ -51,7 +72,7 @@
           marquant l'émergence de ce site historique en tant que résidence
           royale emblématique. D'abord construit comme une forteresse, le
           château a été progressivement transformé en une demeure royale sous
-          le règne de François Ier au 16e siècle. Les premières phases de
+          le règne de François Ier au 16e siècle.<span id="dots1">..</span><span id="more1"> Les premières phases de
           construction ont été initiées par Louis VII au milieu du 12e siècle,
           établissant ainsi les fondements de ce qui allait devenir un lieu de
           pouvoir et de prestige. Cependant, c'est véritablement sous François
@@ -60,7 +81,8 @@
           somptueux tels que la célèbre aile François Ier. Le château de
           Fontainebleau est donc le fruit de siècles d'évolution
           architecturale, reflétant l'histoire et le goût des souverains
-          successifs qui ont contribué à sa grandeur.
+          successifs qui ont contribué à sa grandeur.</span>
+          <br/><span id="lien1" onclick="readMore(1)">Lire plus</span>
         </p>
         <img src="../assets/histoire/creation.png" />
       </div>
@@ -78,7 +100,7 @@
           politique que culturel. François Ier est souvent considéré comme le
           premier roi de la Renaissance en France, et son mécénat artistique a
           eu une influence significative sur le développement de l'art et de
-          la culture dans le pays. Sous son règne, le château de Fontainebleau
+          la culture dans le pays.<span id="dots2">..</span><span id="more2"> Sous son règne, le château de Fontainebleau
           a été transformé en une résidence somptueuse, avec l'introduction du
           style Renaissance italienne. François Ier a également favorisé les
           échanges culturels avec l'Italie, invitant des artistes tels que
@@ -89,7 +111,8 @@
           établi des bases culturelles qui ont perduré au fil des siècles.
           Ainsi, le règne de François Ier reste une période clé de l'histoire
           française, marquée par un équilibre entre les ambitions politiques
-          et les réalisations artistiques.
+          et les réalisations artistiques.</span> 
+          <br/><span id="lien2" onclick="readMore(2)">Lire plus</span>
         </p>
         <img src="../assets/histoire/francois.png" />
       </div>
@@ -105,7 +128,7 @@
           Henri IV, roi de France de 1589 à 1610, a laissé une marque
           significative sur le château de Fontainebleau en ordonnant la
           construction de la Cour des Adieux. Cette cour, érigée au début du
-          17e siècle, revêt une importance symbolique majeure. Henri IV,
+          17e siècle, revêt une importance symbolique majeure.<span id="dots3">..</span><span id="more3"> Henri IV,
           soucieux de consolider son règne et de rétablir la stabilité dans le
           royaume après les guerres de religion, a choisi Fontainebleau comme
           lieu pour cette initiative. La Cour des Adieux était destinée à
@@ -116,7 +139,8 @@
           l'ordonnance d'Henri IV pour la construction de la Cour des Adieux à
           Fontainebleau témoigne de son souci de consolider le pouvoir royal
           et d'inscrire son règne dans l'histoire architecturale et symbolique
-          du château.
+          du château.</span> 
+          <br/><span id="lien3" onclick="readMore(3)">Lire plus</span>
         </p>
         <img src="../assets/histoire/henri.png" />
       </div>
@@ -133,14 +157,15 @@
           tournant majeur dans l'histoire européenne. Après une série de
           défaites militaires, notamment la désastreuse campagne de Russie en
           1812 et la défaite à la bataille de Leipzig en 1813, Napoléon se
-          retrouva acculé par les coalitions européennes. Face à la pression
+          retrouva acculé par les coalitions européennes.<span id="dots4">..</span><span id="more4"> Face à la pression
           croissante et à l'invasion imminente de la France, Napoléon prit la
           décision historique d'abdiquer le 6 avril 1814. Cet acte symbolique
           mettait fin à son règne impérial et ouvrait la voie à son exil sur
           l'île d'Elbe. L'abdication de Napoléon ouvrit également la porte à
           une période de restauration monarchique en France, marquant la fin
           de l'ère napoléonienne et le début d'une nouvelle phase dans
-          l'histoire politique de l'Europe.
+          l'histoire politique de l'Europe.</span>
+          <br/><span id="lien4" onclick="readMore(4)">Lire plus</span>
         </p>
         <img src="../assets/histoire/napoleon.png" />
       </div>
@@ -158,7 +183,7 @@
           X, dernier monarque de la branche aînée des Bourbons, avait succédé
           à son frère Louis XVIII en 1824. Son règne fut marqué par des
           politiques conservatrices et autoritaires, provoquant des tensions
-          croissantes avec l'opposition libérale. La crise atteignit son
+          croissantes avec l'opposition libérale.<span id="dots5">..</span><span id="more5"> La crise atteignit son
           paroxysme avec l'ordonnance des "Quatre Ordonnances" en juillet
           1830, restreignant les libertés politiques et suscitant
           l'indignation populaire. Face à l'opposition généralisée et à la
@@ -168,7 +193,8 @@
           révolutionnaires, et la monarchie fut abolie. Cela aboutit à
           l'avènement de la monarchie de Juillet avec le règne de
           Louis-Philippe, marquant ainsi un nouveau chapitre dans l'histoire
-          politique de la France.
+          politique de la France.</span>
+          <br/><span id="lien5" onclick="readMore(5)">Lire plus</span>
         </p>
         <img src="../assets/histoire/charles.png" />
       </div>
@@ -186,9 +212,9 @@
           de ce lieu emblématique. Après la défaite française en 1940, les
           forces d'occupation allemandes investirent la France, et le château
           de Fontainebleau, chargé d'histoire et de symbolisme, ne fit pas
-          exception. Occupé par les troupes nazies, le château devint un
+          exception.<span id="dots6">..</span><span id="more6"> Occupé par les troupes nazies, le château devint un
           quartier général stratégique pour les opérations militaires
-          allemandes dans la région. Durant cette période, le château,
+          allemandes dans la région.Durant cette période, le château,
           autrefois lieu de résidence de souverains français, perdit une
           grande partie de sa splendeur, car les forces d'occupation
           utilisèrent ses salles somptueuses à des fins administratives et
@@ -199,7 +225,8 @@
           marquant la restauration progressive du château dans les décennies
           suivantes. Aujourd'hui, le château de Fontainebleau demeure un lieu
           chargé de mémoire, rappelant les sombres jours de l'occupation
-          allemande pendant la Seconde Guerre mondiale.
+          allemande pendant la Seconde Guerre mondiale.</span>
+          <br/><span id="lien6" onclick="readMore(6)">Lire plus</span>
         </p>
         <img src="../assets/histoire/occupation_allemende.png" />
       </div>
@@ -217,7 +244,7 @@
           attraction majeure, attirant des visiteurs du monde entier. Ses
           vastes jardins, ses élégantes salles de réception, ses galeries
           d'art et ses appartements royaux restaurés offrent une expérience
-          immersive dans l'histoire et l'art français. Le château abrite une
+          immersive dans l'histoire et l'art français.<span id="dots7">..</span><span id="more7"> Le château abrite une
           collection impressionnante de meubles d'époque, de tapisseries, de
           peintures et d'objets d'art qui reflètent les goûts des souverains
           qui l'ont occupé au fil des siècles. Les visiteurs peuvent explorer
@@ -228,7 +255,8 @@
           accueillant parfois des événements culturels et diplomatiques.
           Ainsi, le château de Fontainebleau reste non seulement un site
           touristique incontournable, mais également un lieu vivant qui
-          perpétue la richesse de son passé au cœur de la France.
+          perpétue la richesse de son passé au cœur de la France.</span>
+          <br/><span id="lien7" onclick="readMore(7)">Lire plus</span>
         </p>
         <img src="../assets/histoire/nos_jours.png" />
       </div>
