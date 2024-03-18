@@ -68,7 +68,7 @@ font-family: "Cicle Gordita Italic";
       <h1 class="titre-principal">Fontainebleau</h1>
     </header>
 
-    <!-- Petite présentation concernant Francoir 1er -->
+    <!-- Petite présentation concernant Francois 1er -->
 
     <section class="section-francois">
       <div class="partie-gauche">
@@ -91,29 +91,34 @@ font-family: "Cicle Gordita Italic";
       <img src="../assets/francois.png" />
     </section>
 
-    <!-- Au centre de l'intrigue -->
-
-    <section class="centre_intrigue">
-      <h2>Au centre de l'intrigue</h2>
-      <div class="elements_intrigue">
-        <div class="residence_royale">
-          <img src="../assets/residence_royale.png" />
-          <p>
-            La résidence <br />
-            royale
-          </p>
-        </div>
-        <div class="histoire_fontaibleau">
-          <a href="histoire.html#lien-napoleon">
-            <img src="../assets/napoleon.png" />
-            <p>
-              L'histoire de <br />
-              Fontainebleau
-            </p>
-          </a>
-        </div>
-      </div>
-    </section>
+    <!-- Le carousel -->
+    <div class="container">
+      <div class="carousel">
+        <input type="radio" id="carousel-1" name="carousel[]" checked>
+        <input type="radio" id="carousel-2" name="carousel[]">
+         <input type="radio" id="carousel-3" name="carousel[]">
+        <ul class="carousel__items">
+          <li class="carousel__item"><img src="../assets/francois.png" alt=""></li>
+          <li class="carousel__item"><img src="../assets/napoleon.png" alt=""></li>
+          <li class="carousel__item"><img src="../assets/histoire/charles.png" alt=""></li>
+        </ul>
+         <div class="carousel__prev">
+           <label for="carousel-1"></label>
+           <label for="carousel-2"></label>
+           <label for="carousel-3"></label>
+         </div>
+         <div class="carousel__next">
+           <label for="carousel-1"></label>
+           <label for="carousel-2"></label>
+           <label for="carousel-3"></label> 
+         </div>
+         <div class="carousel__nav">
+           <label for="carousel-1"></label>
+           <label for="carousel-2"></label>
+           <label for="carousel-3"></label>
+         </div>
+       </div>
+     </div>
 
     <!-- Section Forêt -->
 
