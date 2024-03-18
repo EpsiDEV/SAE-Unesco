@@ -435,6 +435,17 @@ li {
   z-index: -1;
 }
 
+.read_more {
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.read_more:hover {
+  cursor: pointer;
+  color: #999;
+  transition: .2s ease-out;
+}
+
 .horaires {
   font-size: 1rem;
   color: #fff;
