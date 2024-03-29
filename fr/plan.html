@@ -2,16 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actualités</title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../assets/logo.png" />
+    <link href="https://db.onlinewebfonts.com/a/fFdx9aaQTqZZ01nqPsTAj0nmjQRRR3uMREwFN1QZtpvC92BnjoXvE3Ire9407myIbd2392Uj"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preload" href="../css/style.css" as="style" />
-    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <h1>Actualités</h1>
+    <header class="header-accueil header-plan">
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="actus.html">Plan</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="histoire.html">Histoire</a></li>
+            <li><a href="jardin.html">Jardins</a></li>
+          </ul>
+          <div class="choix-langues">
+            <a href="#"><img src="../assets/france.png" /></a>
+            <a href="../en/jardin.html"><img src="../assets/royaume-uni.png" /></a>
+            <a href="../es/jardin.html"><img src="../assets/espagne.png" /></a>
+          </div>
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars" style="color: #f6f5f4"></i>
+          </div>
+        </nav>
+        <h1 class="titre-principal">Plan</h1>
+    </header>
+    
+    <main class="carte">
+        <h1>Localisation du château</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2648.835333251912!2d2.696909476789917!3d48.402105332707755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5f488ad7ca349%3A0xff5eea6f01c3ab80!2sCh%C3%A2teau%20de%20Fontainebleau!5e0!3m2!1sfr!2sfr!4v1711708047471!5m2!1sfr!2sfr" width=800px height=600px style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h1>Localisation du parc</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5298.046234497696!2d2.6863509935791057!3d48.3984992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5f48ff52e989f%3A0x4873c571cce2112f!2sJardin%20Anglais!5e0!3m2!1sfr!2sfr!4v1711708666500!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    
     <footer class="footer">
         <ul class="social-icon">
             <li class="social-icon__item">
