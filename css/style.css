@@ -734,16 +734,39 @@ h1 {
   font-size: 4rem;
 }
 
+.composant-architecture{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0px 0px 0px;
+  flex-direction: column;
+}
+
+.composant-architecture p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 200px 50px 200px;
+  flex-direction: column;
+  font-size: 50;
+}
 /* Style de la page plan */
 
-.carte {
+.composant-cartes {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0px 0px 50px 0px;
-  gap: 50px;
+  gap: 80px;
 }
+
+.composant-cartes .carte {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+}
+
 
 /* Style su site responsive */
 
