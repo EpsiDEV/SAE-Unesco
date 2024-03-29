@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jardins</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../assets/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/a/fFdx9aaQTqZZ01nqPsTAj0nmjQRRR3uMREwFN1QZtpvC92BnjoXvE3Ire9407myIbd2392Uj"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- Haut de page -->
+    <header class="header-accueil header-jardins">
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="actus.html">Noticias</a></li>
+          <li><a href="architecture.html">Arquitectura</a></li>
+          <li><a href="histoire.html">Historia</a></li>
+          <li><a href="jardin.html">Jardines</a></li>
+        </ul>
+        <div class="choix-langues">
+          <a href="../fr/jardin.html"><img src="../assets/france.png" /></a>
+          <a href="../en/jardin.html"
+            ><img src="../assets/royaume-uni.png"
+          /></a>
+          <a href="#"><img src="../assets/espagne.png" /></a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars" style="color: #f6f5f4"></i>
+        </div>
+      </nav>
+      <h1 class="titre-principal">Jardines</h1>
+    </header>
+
+    <main class="conteneur-jardins">
+      <div class="element">
+        <img src="../assets/jardins/etang_carpes.png" />
+        <h3>Estanque de carpas</h3>
+        <p>
+          Orientado al sur, el estanque de las carpas debe su nombre a la famosa
+          carpa cuya presencia en Fontainebleau está atestiguada desde Enrique
+          IV.
+        </p>
+      </div>
+
+      <div class="element">
+        <img src="../assets/jardins/grotte_pins.png" />
+        <h3>Gruta de pinos</h3>
+        <p>
+          Un ejemplo temprano de gruta artificial en Francia, la "grotte des
+          pins ", final del ala Luis XV construida en lugar del ala de la
+          galería de Ulises. ala de la Galería de Ulysse.
+        </p>
+      </div>
+
+      <div class="element">
+        <img src="../assets/jardins/grand_parterre.png" />
+        <h3>El Gran Césped</h3>
+        <p>
+          La creación del Gran Césped entre 1660 y 1664 -el mayor de Europa, con
+          sus 14 hectáreas- por André Le Nôtre y Louis Le Vau, atestigua la la
+          clarificación del espacio buscada por Luis XIV en Fontainebleau.
+        </p>
+      </div>
+    </main>
+
+    <div class="parc">
+      <img src="../assets/jardins/parc.png" />
+      <h3>El parque</h3>
+      <p>
+        Extendiéndose más allá de la ladera del Bassin des Cascades, el parque
+        marcaba antaño los los límites del dominio real hacia el este. Desde el
+        pueblo de Avon, era atravesado por la carretera principal de acceso al
+        castillo. Su Su trazado actual, con su red de cascadas y avenidas
+        estrelladas es el resultado de la creación, bajo Enrique IV, de un gran
+        canal de casi 1200 metros de largo (1606-1609) y 40 metros de ancho.
+        Inicialmente plantado con más de sesenta mil árboles, entre ellos
+        hileras de álamos blancos hileras de álamos blancos, robles y árboles
+        frutales, este "parque cerrado" y su canal parque" y su canal fueron el
+        orgullo del rey, que supervisó las las obras. En 1609, se tardó más de
+        una semana en llenar el canal, y en otoño el rey ya navegaba por él.
+        otoño, el rey navegaba por él.
+      </p>
+    </div>
+
+    <div class="fin-jardins">
+      <div class="element">
+        <img src="../assets/jardins/cour_offices.png" />
+        <h3>Patio de los Oficios/barrio Enrique IV</h3>
+        <p>
+          Este vasto conjunto de tres alas construidas en arenisca, ladrillo y
+          piedra de mampostería piedra, este antepatio demuestra la ambición de
+          Enrique IV de crear un nuevo acceso al castillo desde la ciudad.
+        </p>
+      </div>
+
+      <div class="element">
+        <img src="../assets/jardins/porte_baptistere.png" />
+        <h3>La puerta del Baptisterio</h3>
+        <p>
+          Fue Enrique IV, el gran constructor, quien, hacia 1606, hizo construir
+          esta puerta triunfal. Puerta triunfal rematada por una cúpula, dando
+          al patio oval una apertura hacia el Este. apertura hacia el este.
+        </p>
+      </div>
+    </div>
+
+    <section class="horaires">
+      <h1>Estos son los horarios:</h1>
+      <a
+        href="https://www.chateaudefontainebleau.fr/preparez-votre-visite/horaires-et-tarifs/#horaire"
+        ><h2><i class="fa-solid fa-arrow-right"></i> Enlace a los horarios</h2>
+      </a>
+    </section>
+
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.facebook.com/chateaufontainebleau"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.linkedin.com/company/chateau-de-fontainebleau/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://twitter.com/CFontainebleau"
+            target="_blank"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.instagram.com/chateaufontainebleau"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.youtube.com/channel/UCuHsrpyGJjGPixHWu7yrDSQ"
+            target="_blank"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.pinterest.com/chfontainebleau"
+            target="_blank"
+          >
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+        </li>
+      </ul>
+      <p>2023-2024 BUT Informatique</p>
+      <section class="logos">
+        <img class="logo_mcn" src="../assets/mcn.png" />
+        <a href="https://iut.univ-gustave-eiffel.fr/" target="_blank"
+          ><img class="logo_iut" src="../assets/logo.png"
+        /></a>
+        <a href="https://whc.unesco.org/fr/list/160" target="_blank"
+          ><img class="logo_unesco" src="../assets/unesco.png"
+        /></a>
+      </section>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        var navList = document.querySelector(".header-accueil .nav-bar ul");
+        navList.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

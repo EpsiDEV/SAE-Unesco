@@ -1,0 +1,939 @@
+@keyframes animation {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Réglages de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  font-family: "Dyno Regular";
+}
+
+/* En tête de la page */
+
+.header-accueil {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/bg.png);
+  background-size: cover;
+  position: relative;
+}
+
+.header-histoire {
+  background-image: url(../assets/histoire/bg_histoire.png);
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+p {
+  color: #f4f4f4;
+}
+
+/* Menu de navigation  */
+
+.header-accueil {
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+.header-accueil .nav-bar {
+  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header-accueil .nav-bar .choix-langues {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.header-accueil .nav-bar .choix-langues img {
+  width: 50px;
+}
+
+.header-accueil .nav-bar ul {
+  background-color: #505050;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 20px;
+}
+
+.header-accueil .nav-bar a,
+li {
+  list-style: none;
+  font-size: 22px;
+  color: #f4f4f4;
+  transition: 0.3s all;
+  position: relative;
+}
+
+.header-accueil .nav-bar li {
+  padding: 20px;
+}
+
+.header-accueil .nav-bar li:hover a {
+  color: #f7af3e;
+  transition: 0.3s all;
+}
+
+.header-accueil .nav-bar li::after {
+  content: "";
+  position: absolute;
+  background-color: #f7af3e;
+  height: 3px;
+  border-radius: 10px;
+  width: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.header-accueil .nav-bar li:hover::after {
+  width: 100%;
+}
+
+.header-accueil .nav-bar .menu-icon {
+  display: none;
+}
+
+/* Le titre principal de la page */
+
+.header-accueil .titre-principal {
+  position: absolute;
+  font-size: 9rem;
+  color: #f4f4f4;
+  text-shadow: 2px 2px 20px #333;
+  top: 55%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  animation: animation 1s ease-in-out;
+}
+
+/* Section Francois 1er */
+
+.section-francois {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px;
+}
+
+.section-francois .partie-gauche {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-francois .partie-gauche h2 {
+  align-self: center;
+  font-size: 3rem;
+  color: #ea5c0d;
+}
+
+.section-francois p {
+  font-family: "Cicle Fina";
+  font-size: 30px;
+}
+
+.section-francois .partie-gauche a {
+  align-self: flex-start;
+}
+
+.section-francois img {
+  margin-left: 50px;
+}
+
+.ensavoir {
+  width: 20rem;
+  height: 4rem;
+  background-color: rgb(234, 91, 12);
+  color: white;
+  align-content: center;
+  position: relative;
+  margin: 5% 10%;
+  transition: 0.3s all;
+}
+
+.ensavoir:hover {
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.fa-arrow-right {
+  transition: 0.2s all;
+}
+
+.ensavoir:hover .fa-arrow-right {
+  cursor: pointer;
+  transition: 0.2s all;
+  transform: translateX(10px);
+}
+
+.ensavoir p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.portrait {
+  width: 40rem;
+  margin-right: 3rem;
+}
+
+.centre_intrigue {
+  margin: 10% 0;
+}
+
+.centre_intrigue h2 {
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 3rem;
+  margin: 10%;
+}
+
+.centre_intrigue .elements_intrigue {
+  display: flex;
+  justify-content: space-around;
+}
+
+.centre_intrigue .elements_intrigue p {
+  background-color: #333;
+  color: #f7af3e;
+  text-align: center;
+  font-size: 36px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.centre_intrigue .elements_intrigue .residence_royale,
+.histoire_fontaibleau {
+  position: relative;
+}
+
+.centre_intrigue .elements_intrigue .residence_royale p {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  right: -50%;
+}
+
+.centre_intrigue .elements_intrigue .histoire_fontaibleau p {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: -10%;
+}
+
+.foret {
+  margin: 5% 0;
+  background-image: url(../assets/foret.png);
+  background-size: cover;
+  height: 90vh;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.foret h1 {
+  font-size: 10rem;
+  color: #f4f4f4;
+  margin-top: 5%;
+  margin-left: 5%;
+  text-shadow: 2px 2px 20px #333;
+}
+
+.horaire {
+  color: white;
+  font-family: "Cicle Semi";
+}
+
+.footer {
+  position: relative;
+  background: #505050;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  gap: 20px;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icon__link:hover {
+  transform: translateY(-5px);
+  color: #f7af3e;
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+  color: #f7af3e;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.footer .logos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 50px;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000rem;
+  }
+
+  100% {
+    background-positon-x: 0rem;
+  }
+}
+
+/* Style de la page Histoire */
+
+.frise {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.frise .conteneur {
+  padding: 50px;
+  position: relative;
+  width: 50%;
+}
+
+.frise .conteneur .texte {
+  padding: 20px 30px;
+  background-color: #505050;
+  position: relative;
+  border-radius: 6px;
+  font-family: "Cicle Semi";
+}
+
+.frise .conteneur .texte h2 {
+  font-weight: 600;
+  margin-bottom: 2px;
+  font-size: 2rem;
+  font-family: "Dyno Bold";
+  color: #f7af3e;
+}
+
+.frise .conteneur .texte small {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 3px;
+  font-size: 1.7rem;
+  font-family: "Dyno Italic";
+  color: #ea5c0d;
+}
+
+.frise .conteneur .texte p {
+  font-size: 1.4rem;
+  font-family: "Cicle Gordita";
+}
+
+.frise .conteneur .texte img {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.frise .gauche {
+  left: 0%;
+}
+
+.frise .droite {
+  left: 50%;
+}
+
+.frise .conteneur .point-frise {
+  position: absolute;
+  font-size: 40px;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+}
+
+.frise .droite .point-frise {
+  left: -20px;
+}
+
+.frise::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #b94503;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+.read_more {
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.read_more:hover {
+  cursor: pointer;
+  color: #999;
+  transition: .2s ease-out;
+}
+
+.horaires {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 5%;
+  margin-left: 1rem;
+  margin-bottom: 5%;
+}
+
+.horaires h1 {
+  font-size: 3rem;
+  color: #f4f4f4;
+  margin-top: 5%;
+  margin-left: 2rem;
+  margin-bottom: 3%;
+  text-shadow: 2px 2px 20px #333;
+}
+
+.horaires h2 {
+  color: #f7af3e;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.logo_mcn {
+  height: 5rem;
+}
+
+.logo_iut {
+  height: 5rem;
+  width: 5rem;
+}
+
+.logo_unesco {
+  height: 5rem;
+  width: 5rem;
+}
+
+/* Page Jardins */
+
+.header-jardins {
+  background-image: url(../assets/jardins/bg.png);
+}
+
+.conteneur-jardins {
+  margin: 10rem 5rem;
+  display: flex;
+  gap: 40px;
+}
+
+.conteneur-jardins .element {
+  width: 33%;
+}
+
+.conteneur-jardins .element img {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 1.8rem;
+}
+
+.conteneur-jardins .element h3 {
+  margin-bottom: 0.8rem;
+  font-size: 27px;
+  color: #ea5c0d;
+  text-align: center;
+  background-color: #505050;
+  font-family: "Dyno Italic";
+  padding: 10px;
+}
+
+.conteneur-jardins .element p {
+  font-size: 19px;
+  font-family: "Cicle Fina";
+}
+
+.parc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.parc img {
+  margin-bottom: 1.8rem;
+}
+
+.parc h3 {
+  margin-bottom: 1.5rem;
+  font-size: 27px;
+  color: #ea5c0d;
+  text-align: center;
+  background-color: #505050;
+  font-family: "Dyno Italic";
+  padding: 10px 100px;
+}
+
+.parc p {
+  width: 70%;
+  font-size: 19px;
+  font-family: "Cicle Fina";
+}
+
+.fin-jardins {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10rem;
+}
+
+.fin-jardins .element {
+  width: 30%;
+}
+
+.fin-jardins .element img {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 1.8rem;
+}
+
+.fin-jardins .element h3 {
+  margin-bottom: 1.5rem;
+  font-size: 27px;
+  color: #ea5c0d;
+  text-align: center;
+  background-color: #505050;
+  font-family: "Dyno Italic";
+  padding: 10px;
+}
+
+.fin-jardins .element p {
+  font-size: 19px;
+  font-family: "Cicle Fina";
+}
+
+.header-architecture {
+  background-image: url(../assets/architecture/bg.png);
+}
+
+/* CAROUSEL */
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(1) {
+  opacity: 1 !important;
+  z-index: 3;
+}
+
+.container {
+  width: 60vw;
+  min-width: 60vw;
+  margin: 50px auto;
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel > input[type="radio"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  top: 0;
+}
+.carousel > input[type="radio"]:checked ~ .carousel__items .carousel__item, .carousel > input[type="radio"]:checked ~ .carousel__prev > label, .carousel > input[type="radio"]:checked ~ .carousel__next > label {
+  opacity: 0;
+}
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(1) {
+  opacity: 1;
+}
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2) {
+  opacity: 1;
+}
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(3) {
+  opacity: 1;
+}
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+.carousel__items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.carousel__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+}
+.carousel__item img {
+  width: 100%;
+  vertical-align: middle;
+}
+.carousel__prev > label, .carousel__next > label {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  opacity: 0;
+  z-index: 2;
+}
+.carousel__prev > label:hover, .carousel__next > label:hover, .carousel__prev > label:focus, .carousel__next > label:focus {
+  opacity: 0.5 !important;
+}
+.carousel__prev > label:before, .carousel__next > label:before, .carousel__prev > label:after, .carousel__next > label:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+.carousel__prev > label:before, .carousel__next > label:before {
+  background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+  width: 60%;
+  height: 60%;
+  top: 20%;
+}
+.carousel__prev > label {
+  left: 2%;
+}
+.carousel__prev > label:before {
+  left: 35%;
+  top: 20%;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.carousel__next > label {
+  right: 2%;
+}
+.carousel__next > label:before {
+  left: 10%;
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+}
+.carousel__nav {
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+}
+.carousel__nav > label {
+  border: 1px solid #fff;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 0.125%;
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Style su site responsive */
+
+@media screen and (max-width: 900px) {
+  .header-accueil .titre-principal {
+    font-size: 3rem;
+    left: 50%;
+    top: 50%;
+  }
+
+  .header-accueil .nav-bar {
+    position: relative;
+  }
+
+  .header-accueil .nav-bar ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .header-accueil .nav-bar .choix-langues {
+    gap: 10px;
+    margin: 5px;
+  }
+
+  .header-accueil .nav-bar .choix-langues img {
+    width: 35px;
+  }
+
+  .header-accueil .nav-bar ul.active {
+    display: flex;
+  }
+
+  .header-accueil .nav-bar .menu-icon {
+    display: block;
+    width: 40px;
+  }
+
+  .menu-icon .fa-bars {
+    font-size: 40px;
+    margin: 10px;
+  }
+
+  .section-francois img {
+    display: none;
+  }
+
+  .section-francois .partie-gauche h2 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+
+  .section-francois p {
+    font-size: 16px;
+  }
+
+  .ensavoir {
+    width: 15rem;
+    height: 3rem;
+    align-self: flex-start;
+  }
+
+  .ensavoir p {
+    font-size: 14px;
+  }
+
+  .centre_intrigue .elements_intrigue {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .centre_intrigue .elements_intrigue img {
+    width: 100%;
+  }
+
+  .centre_intrigue .elements_intrigue p {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .centre_intrigue .elements_intrigue .residence_royale p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  .centre_intrigue .elements_intrigue .histoire_fontaibleau p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  .foret {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .foret h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+
+  .horaires h1 {
+    font-size: 1.2rem;
+    text-align: start;
+  }
+
+  .horaires a h2 {
+    font-size: 1.1rem;
+  }
+
+  .footer .logos {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .frise {
+    margin: 50px auto;
+  }
+
+  .frise::after {
+    left: 31px;
+  }
+
+  .frise .conteneur {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .frise .conteneur .texte {
+    padding: 15px;
+  }
+
+  .frise .conteneur .texte h2 {
+    font-size: 20px;
+  }
+
+  .frise .conteneur .texte small {
+    font-size: 17px;
+  }
+
+  .frise .conteneur .texte p {
+    font-size: 16px;
+  }
+
+  .frise .conteneur .texte small {
+    margin-bottom: 10px;
+  }
+
+  .frise .droite {
+    left: 0;
+  }
+
+  .frise .conteneur .point-frise {
+    left: 10px;
+  }
+
+  /* Style de la page responsive Jardins */
+
+  .conteneur-jardins {
+    flex-direction: column;
+    width: 100%;
+    margin: 5rem 0;
+    align-items: center;
+  }
+
+  .conteneur-jardins .element {
+    width: 80vw;
+    margin-bottom: 3rem;
+  }
+
+  .parc {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .parc img {
+    width: 100vw;
+  }
+
+  .parc p {
+    font-size: 17px;
+  }
+
+  .fin-jardins {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .fin-jardins .element {
+    width: 80vw;
+    margin-bottom: 3rem;
+  }
+
+  .fin-jardins .element h3 {
+    font-size: 22px;
+  }
+
+  .fin-jardins .element p {
+    font-size: 17px;
+  }
+  .carousel {
+    width: 100vw;
+  }
+}
