@@ -205,6 +205,8 @@ li {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 30px;
+  box-shadow: 0px 0px 1px #f7af3e;
 }
 
 .contact form .entree {
@@ -230,7 +232,6 @@ textarea {
 textarea::placeholder {
   font-style: italic;
   font-family: "Cicle Semi";
-  color: #333;
 }
 
 .contact form #submit {
