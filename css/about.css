@@ -157,6 +157,86 @@ li {
 }
 /* Fin du style de la présentation des personnes */
 
+/* Style des mentions */
+
+.mentions {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.mentions h2 {
+  font-size: 3.6rem;
+  color: #f4f4f4;
+}
+
+.mentions .paragraphes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.mentions p {
+  color: #f4f4f4;
+  padding: 0 5rem;
+  font-size: 1.3rem;
+}
+
+/* Fin du style des mentions */
+
+/* Style du contact */
+
+.contact {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.contact h2 {
+  font-size: 3.6rem;
+  color: #f4f4f4;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact form .entree {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact form .entree label {
+  color: #f4f4f4;
+  font-size: 1.5rem;
+}
+
+.contact form .entree input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.contact form #submit {
+  color: #f4f4f4;
+  background-color: #ea5c0d;
+  width: 50%;
+  align-self: center;
+  padding: 10px 5px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
 .footer {
   position: relative;
   background: #505050;
