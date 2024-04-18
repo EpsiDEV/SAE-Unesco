@@ -186,7 +186,7 @@ li {
 
 /* Fin du style des mentions */
 
-/* Style du contact */
+/* Style du formulaire contact */
 
 .contact {
   margin-top: 7rem;
@@ -235,6 +235,18 @@ textarea {
   font-size: 1rem;
   border-radius: 40px;
   cursor: pointer;
+}
+
+/* Fin du style du forulaire de contact */
+
+/* Style du message de fin */
+
+.fin {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #f4f4f4;
+  margin: 7rem 5rem;
+  letter-spacing: 2px;
 }
 
 .footer {
