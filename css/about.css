@@ -223,12 +223,14 @@ textarea {
   width: 100%;
   padding: 10px;
   font-size: 1.2rem;
+  color: #333;
 }
 
 .contact form input::placeholder,
 textarea::placeholder {
   font-style: italic;
   font-family: "Cicle Semi";
+  color: #333;
 }
 
 .contact form #submit {
