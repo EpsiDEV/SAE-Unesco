@@ -153,6 +153,11 @@ li {
 
 .team_presentation .person .person_details .person_links a {
   font-size: 2rem;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.team_presentation .person .person_details .person_links a:hover {
   color: #f7af3e;
 }
 /* Fin du style de la présentation des personnes */
