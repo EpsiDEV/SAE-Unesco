@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>History</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../assets/logo.png" />
+  <link href="https://db.onlinewebfonts.com/a/fFdx9aaQTqZZ01nqPsTAj0nmjQRRR3uMREwFN1QZtpvC92BnjoXvE3Ire9407myIbd2392Uj"
+    rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preload" href="../css/style.css" as="style" />
+</head>
+
+<body>
+  <!-- Haut de la page -->
+  <script>
+    function readMore(i) {
+      var dots = document.getElementById("dots" + i);
+      var moreText = document.getElementById("more" + i);
+      var lien = document.getElementById("lien" + i);
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        lien.innerHTML = "Lire plus";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        lien.innerHTML = "Lire moins";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+
+  <style>
+    #more1, #more2, #more3, #more4, #more5, #more6, #more7 {display: none;}
+  </style>
+
+  <header class="header-accueil header-histoire">
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plan.html">Plan</a></li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="gardens.html">Gardens</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="choix-langues">
+        <a href="#"><img src="../assets/france.png" /></a>
+        <a href="../en/histoire.html"><img src="../assets/royaume-uni.png" /></a>
+        <a href="../es/histoire.html"><img src="../assets/espagne.png" /></a>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars" style="color: #f6f5f4"></i>
+      </div>
+    </nav>
+    <h1 class="titre-principal">History</h1>
+  </header>
+
+  <div class="frise" data-aos="fade-down">
+    <div class="conteneur gauche">
+      <i class="fa-solid fa-circle point-frise" data-aos="fade-down" data-aos-duration="1000"
+        style="color: #ea5b0c"></i>
+      <div class="texte" data-aos="fade-right" data-aos-duration="1000">
+        <h2>Creating the castle</h2>
+        <small>12th century</small>
+        <p>
+          The Château de Fontainebleau dates back to the 12th century,
+          marking the emergence of this historic site as an emblematic
+          royal residence. Originally built as a fortress, the château was
+          gradually transformed into a royal residence under the reign
+          reign of François I in the 16th century.<span id="dots1">..</span><span id="more1"> The first phases of construction
+          were initiated by Louis VII in the middle of the 12th century,
+          laying the foundations for what was to become a place of power and
+          power and prestige. However, it was really under François
+          I that the château underwent a major architectural metamorphosis,
+          with the introduction of the Renaissance style and the addition of sumptuous
+          elements such as the famous François I wing. The Château de
+          Château de Fontainebleau is the fruit of centuries of architectural
+          reflecting the history and tastes of the successive sovereigns
+          who have contributed to its greatness.</span>
+          <br/><span id="lien1" onclick="readMore(1)" class="read_more">Read more</span>
+        </p>
+        <img src="../assets/histoire/creation.png" />
+      </div>
+    </div>
+
+    <div class="conteneur droite" id="lien-francois">
+      <i class="fa-solid fa-circle point-frise" data-aos="fade-down" data-aos-duration="1000"
+        style="color: #ea5b0c"></i>
+      <div class="texte" data-aos="fade-left" data-aos-duration="1000">
+        <h2>François 1st</h2>
+        <small>1515 - 1547</small>
+        <p>
+          The reign of François I, which lasted from 1515 to 1547
+          profoundly marked the history of France, both politically
+          both politically and culturally. François I is often regarded as the first
+          the first Renaissance king in France, and his patronage of the arts
+          had a significant influence on the development of art and culture
+          culture in the country.<span id="dots2">..</span><span id="more2"> Under his reign, the Château de Fontainebleau
+            was transformed into a sumptuous residence, with the introduction of the
+            Italian Renaissance style. François I also encouraged cultural
+            cultural exchanges with Italy, inviting artists such as Leonardo da Vinci
+            Leonardo da Vinci to his court. On the political front, Francis I
+            was involved in major conflicts, notably the Italian War
+            the Italian War, where he competed with Charles V. Despite military
+            military setbacks, his reign consolidated royal power in France and
+            cultural foundations that have endured over the centuries.
+            Thus, the reign of François I remains a key period in French history
+            marked by a balance between political ambitions and artistic
+            and artistic achievements.</span> 
+          <br/><span id="lien2" onclick="readMore(2)" class="read_more">Read more</span>
+        </p>
+        <img src="../assets/histoire/francois.png" />
+      </div>
+    </div>
+
+    <div class="conteneur gauche">
+      <i class="fa-solid fa-circle point-frise" data-aos="fade-down" data-aos-duration="1000"
+        style="color: #ea5b0c"></i>
+      <div class="texte" data-aos="fade-right" data-aos-duration="1000">
+        <h2>Henri IV's farewell heart</h2>
+        <small>1589 - 1610</small>
+        <p>
+          Henri IV, King of France from 1589 to 1610, left a significant mark
+          on the Château de Fontainebleau by ordering the construction of the
+          construction of the Cour des Adieux. Built in the early
+          17th century, is of major symbolic importance.<span id="dots3">..</span><span id="more3"> Henri IV,
+          to consolidate his reign and restore stability to the kingdom after the
+          kingdom after the Wars of Religion, chose Fontainebleau as the venue for this
+          for this initiative. The Cour des Adieux was intended to mark
+          mark the king's solemn departure and symbolize his unchallenged
+          authority. The architectural design of this courtyard reflects a unique
+          combination of symmetry and grandeur, embodying the idea of royal
+          of royal authority, while allowing for memorable farewells. For example,
+          Henri IV's order for the construction of the Cour des Adieux at
+          Fontainebleau testifies to his concern to consolidate royal power
+          and to inscribe his reign in the architectural and symbolic history
+          history of the château.</span> 
+          <br/><span id="lien3" onclick="readMore(3)" class="read_more">Read more</span>
+        </p>
+        <img src="../assets/histoire/henri.png" />
+      </div>
+    </div>
+
+    <div class="conteneur droite" id="lien-napoleon" data-aos-duration="1000">
+      <i class="fa-solid fa-circle point-frise" data-aos="fade-down" data-aos-duration="1000"
+        style="color: #ea5b0c"></i>
+      <div class="texte" data-aos="fade-left">
+        <h2>Napoleon's abdication</h2>
+        <small>1814</small>
+        <p>
+          Napoleon Bonaparte's abdication in 1814 marked a major turning point in
+          a major turning point in European history. After a series of
+          military defeats, notably the disastrous Russian campaign in
+          1812 and the defeat at the Battle of Leipzig in 1813, Napoleon found himself
+          by European coalitions.<span id="dots4">..</span><span id="more4"> Faced with growing pressure
+            and the imminent invasion of France, Napoleon took the historic decision to
+            historic decision to abdicate on 6 April 1814. This symbolic act
+            put an end to his imperial reign and paved the way for his exile to
+            Elba. Napoleon's abdication also opened the door to a period of monarchic
+            a period of monarchical restoration in France, marking the end of the
+            of the Napoleonic era and the start of a new phase in the political
+            the political history of Europe.</span>
+          <br/><span id="lien4" onclick="readMore(4)" class="read_more">Read more</span>
+        </p>
+        <img src="../assets/histoire/napoleon.png" />
+      </div>
+    </div>
+
+    <div class="conteneur gauche">
+      <i class="fa-solid fa-circle point-frise" data-aos="fade-down" data-aos-duration="1000"
+        style="color: #ea5b0c"></i>
+      <div class="texte" data-aos="fade-right" data-aos-duration="1000">
+        <h2>Abdication of Charles X</h2>
+        <small>1830</small>
+        <p>
+          The abdication of Charles X in 1830 was a significant episode in French
+          French history that marked the end of the Restoration. Charles
+          X, the last monarch of the eldest branch of the Bourbons, had succeeded
+          his brother Louis XVIII in 1824. His reign was marked by conservative
+          authoritarian policies, causing growing tensions with the liberal
+          tensions with the liberal opposition.<span id="dots5">..</span><span id="more5"> The crisis reached its
+            with the "Four Ordinances" of July
+            1830, restricting political freedoms and provoking
+            indignation. Faced with widespread opposition and the
+            revolution, Charles X abdicated on 2 August 1830 in favour of his grandson
+            his grandson Henri, Duke of Bordeaux. However, this
+            quickly considered invalid by the revolutionaries, and the monarchy
+            and the monarchy was abolished. This led to
+            the advent of the July monarchy with the reign of
+            of Louis-Philippe, marking a new chapter in France's political
+            history of France.</span>
+          <br/><span id="lien5" onclick="readMore(5)" class="read_more">Read more</span>
+        </p>
+        <img src="../assets/histoire/charles.png" />
+      </div>
+    </div>
+
+    <div class="conteneur droite">
+      <i class="fa-solid fa-circle point-frise" data-aos="fade-down" data-aos-duration="1000"
+        style="color: #ea5b0c"></i>
+      <div class="texte" data-aos="fade-left" data-aos-duration="1000">
+        <h2>German occupation</h2>
+        <small>1940</small>
+        <p>
+          The German occupation of the Château de Fontainebleau during the Second
+          Second World War was a dark chapter in the history of this
+          of this emblematic site. After the French defeat in 1940, the German
+          German occupying forces invaded France, and the Château de Fontainebleau
+          Fontainebleau, steeped in history and symbolism, was no exception.
+          no exception.<span id="dots6">..</span><span id="more6"> Occupied by Nazi troops, the castle became a strategic
+            strategic headquarters for German military operations in the region.
+            During this period, the château,
+            residence of French sovereigns, lost much of its splendour as the
+            lost much of its splendour, as the occupying forces used its sumptuous
+            its sumptuous rooms for administrative and military purposes.
+            military purposes. The German presence at the Château de Fontainebleau
+            represented not only a physical attack on its heritage,
+            but also a violation of its historical prestige.
+            The occupation ended with the liberation of France in 1944,
+            marking the gradual restoration of the château over the following
+            the following decades. Today, the Château de Fontainebleau remains a place
+            the dark days of German occupation during the Second World War.
+            during the Second World War.</span>
+          <br/><span id="lien6" onclick="readMore(6)" class="read_more">Read more</span>
+        </p>
+        <img src="../assets/histoire/occupation_allemende.png" />
+      </div>
+    </div>
+
+    <div class="conteneur gauche">
+      <i class="fa-solid fa-circle point-frise" data-aos="fade-down" data-aos-duration="1000"
+        style="color: #ea5b0c"></i>
+      <div class="texte" data-aos="fade-right" data-aos-duration="1000">
+        <h2>Nowadays</h2>
+        <p>
+          Today, the Château de Fontainebleau remains a historic jewel
+          historic jewel that bears witness to several centuries of French history.
+          A UNESCO World Heritage Site, the château is a major attraction, attracting visitors from all over the world.
+          attraction, drawing visitors from all over the world. Its
+          vast gardens, elegant reception rooms, art galleries and royal
+          galleries and restored royal flats offer an immersive experience
+          immersive experience of French history and art.<span id="dots7">..</span><span id="more7"> The château houses an
+            impressive collection of period furniture, tapestries, paintings and objets
+            paintings and objets d'art that reflect the tastes of the sovereigns
+            who have occupied it over the centuries. Visitors can explore
+            the private flats of Napoleon I, the famous horseshoe staircase
+            the famous horseshoe staircase, the Saint-Saturnin chapel, and many other
+            architectural treasures. In addition to its historical importance, the Château de
+            Fontainebleau continues to be used for official purposes,
+            sometimes hosting cultural and diplomatic events.
+            In this way, the Château de Fontainebleau remains not only an essential
+            tourist attraction, but also a living place that perpetuates
+            the richness of its past in the heart of France.</span>
+          <br/><span id="lien7" onclick="readMore(7)" class="read_more">Read more</span>
+        </p>
+        <img src="../assets/histoire/nos_jours.png" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="https://www.facebook.com/chateaufontainebleau" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="https://www.linkedin.com/company/chateau-de-fontainebleau/" target="_blank">
+          <i class="fa-brands fab fab fa-linkedin-in"></i>
+        </a>
+      </li>
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="https://www.instagram.com/chateaufontainebleau" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="https://www.youtube.com/channel/UCuHsrpyGJjGPixHWu7yrDSQ" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </li>
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="https://www.pinterest.com/chfontainebleau" target="_blank">
+          <i class="fa-brands fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+    <p>2023-2024 BUT Informatique</p>
+    <section class="logos">
+      <img class="logo_mcn" src="../assets/mcn.png" />
+      <a href="https://iut.univ-gustave-eiffel.fr/" target="_blank"><img class="logo_iut"
+          src="../assets/logo.png" /></a>
+      <a href="https://whc.unesco.org/fr/list/160" target="_blank"><img class="logo_unesco"
+          src="../assets/unesco.png" /></a>
+    </section>
+  </footer>
+
+  <!-- Import pour les animations au scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function toggleMenu() {
+      var navList = document.querySelector(".header-accueil .nav-bar ul");
+      navList.classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>

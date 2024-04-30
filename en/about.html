@@ -15,9 +15,9 @@
       content="Un site tout simplement incroyable réalisé par 4 étudiants en BUT Informatique qui va révolutionner le monde numérique et la façon dont nous utilisons la technologique."
     />
     <meta name="theme-color" content="#FF0000" />
-    <title>Home - Fontainebleau</title>
+    <title>About - Fontainebleau</title>
     <link rel="icon" href="../assets/logo.png" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/about.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -30,7 +30,13 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="preload" href="../css/style.css" as="style" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <!-- 
@@ -67,85 +73,118 @@ font-family: "Cicle Gordita Italic";
           <i class="fa-solid fa-bars" style="color: #f6f5f4"></i>
         </div>
       </nav>
-      <h1 class="titre-principal">Fontainebleau</h1>
     </header>
 
-    <!-- Petite présentation concernant Francois 1er -->
+    <h1 class="titre_principal">About</h1>
 
-    <section class="section-francois">
-      <div class="partie-gauche">
-        <h2>François 1st</h2>
-        <p>
-          In the 16th century, Francis I began construction of a gallery adjacent to the royal apartment.
-          adjacent to the royal flat, offering the sovereign a private space
-          on two levels. On the first floor, this gallery allowed the King to
-          with windows overlooking the Cour de la Fontaine to the south and the
-          and the Queen's garden to the north. In the 18th century, alterations
-          closed these windows and removed the King's retiring room during the extension
-          extension to create new flats for Louis XVI.
-        </p>
-        <a href="histoire.html#lien-francois">
-          <div class="ensavoir">
-            <p>Find out more <i class="fa-solid fa-arrow-right"></i></p>
+    <main class="team_presentation">
+      <div class="person">
+        <img src="../assets/about/photo_test.jpg" class="person_photo" />
+        <div class="person_details">
+          <h2 class="person_name">Jawed</h2>
+          <h4>Team leader / Organizer</h4>
+          <div class="person_links">
+            <a href="https://www.linkedin.com/in/jawed-essahli/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/Wedja10" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
           </div>
-        </a>
-      </div>
-      <img src="../assets/francois.png" />
-    </section>
-
-    <!-- Le carousel -->
-    <div class="container">
-      <div class="carousel">
-        <input type="radio" id="carousel-1" name="carousel[]" checked />
-        <input type="radio" id="carousel-2" name="carousel[]" />
-        <input type="radio" id="carousel-3" name="carousel[]" />
-        <ul class="carousel__items">
-          <li class="carousel__item">
-            <img src="../assets/francois.png" alt="" />
-          </li>
-          <li class="carousel__item">
-            <img src="../assets/napoleon.png" alt="" />
-          </li>
-          <li class="carousel__item">
-            <img src="../assets/histoire/charles.png" alt="" />
-          </li>
-        </ul>
-        <div class="carousel__prev">
-          <label for="carousel-1"></label>
-          <label for="carousel-2"></label>
-          <label for="carousel-3"></label>
-        </div>
-        <div class="carousel__next">
-          <label for="carousel-1"></label>
-          <label for="carousel-2"></label>
-          <label for="carousel-3"></label>
-        </div>
-        <div class="carousel__nav">
-          <label for="carousel-1"></label>
-          <label for="carousel-2"></label>
-          <label for="carousel-3"></label>
         </div>
       </div>
-    </div>
 
-    <!-- Section Forêt -->
-
-    <section class="foret">
-      <h1>The Forest</h1>
-      <a href="">
-        <div class="ensavoir">
-          <p>Find out more <i class="fa-solid fa-arrow-right"></i></p>
+      <div class="person">
+        <img src="../assets/about/photo_test.jpg" class="person_photo" />
+        <div class="person_details">
+          <h2 class="person_name">Kirushikesan</h2>
+          <h4>Designer / Perfectionist</h4>
+          <div class="person_links">
+            <a href="https://www.linkedin.com/in/elankeethan/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/Kirushield" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
         </div>
-      </a>
+      </div>
+
+      <div class="person">
+        <img src="../assets/about/photo_test.jpg" class="person_photo" />
+        <div class="person_details">
+          <h2 class="person_name">Victor</h2>
+          <h4>Expert / Coordinator</h4>
+          <div class="person_links">
+            <a href="https://www.linkedin.com/in/victorsts/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/EpsiDEV" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="mentions">
+      <h2>Terms of use</h2>
+      <div class="paragraphes">
+        <p>
+          This site and its contents are the intellectual property of
+          Gustave Eiffel University and UNESCO. Any reproduction or
+          representation of this site or its contents is prohibited without prior
+          without prior authorization.
+        </p>
+        <p>
+          Personal data collected on this site is intended for
+          Gustave Eiffel University and UNESCO as part of their collaboration.
+          collaboration. In accordance with the law, you have the right to access
+          of access, rectification and deletion of your data. To
+          exercise this right, please contact us at the address
+          above.
+        </p>
+      </div>
     </section>
 
-    <section class="horaires">
-      <h1>Here are the opening times for the castle:</h1>
-      <a
-        href="https://www.chateaudefontainebleau.fr/preparez-votre-visite/horaires-et-tarifs/#horaire"
-      >
-        <h2><i class="fa-solid fa-arrow-right"></i> Link to timetables</h2>
-      </a>
+    <section class="contact">
+      <h2>Contact us</h2>
+      <form action="">
+        <div class="entree">
+          <label for="name">Your name</label>
+          <input type="text" name="nom" placeholder="Dupont" required />
+        </div>
+
+        <div class="entree">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="pierredupont@gmail.com"
+            required
+          />
+        </div>
+
+        <div class="entree">
+          <label for="message">Your message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+            placeholder="Le message"
+            required
+          ></textarea>
+        </div>
+
+        <input id="submit" type="submit" value="Envoyer" />
+      </form>
+    </section>
+
+    <section class="fin">
+      We would like to thank all the teaching staff at Gustave Eiffel University
+      and in particular our teachers: Mr. Ettayeb and Mr. Cessy
+      Cessy for supporting us in this project.
     </section>
 
     <footer class="footer">
