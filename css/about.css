@@ -155,10 +155,13 @@ li {
   font-size: 2rem;
   color: #f4f4f4;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .team_presentation .person .person_details .person_links a:hover {
   color: #f7af3e;
+  transform: translateY(-3px);
+  transition: 0.3s;
 }
 /* Fin du style de la présentation des personnes */
 
