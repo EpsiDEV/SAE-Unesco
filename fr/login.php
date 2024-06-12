@@ -1,40 +1,43 @@
 <?php
 session_start();
-require 'connexion.php';
+require '../include/connexion.inc.php'; // Include the connection file
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
-
+    
     if (empty($username) || empty($password)) {
         $error = "Veuillez entrer le nom d'utilisateur et le mot de passe.";
     } else {
-        // Préparez une requête SQL sécurisée pour éviter les injections SQL
-        $stmt = $conn->prepare('SELECT id, password FROM unesco.users WHERE username = ?');
-        $stmt->bind_param('s', $username);
+        echo $username;
+        echo $password; 
+        // Prepare a secure SQL statement to avoid SQL injection
+        $stmt = $bdd->prepare("SELECT id, password FROM users WHERE username = :username");
+        $stmt->bindParam(':username', $username);
+        echo "SELECT id, password FROM users WHERE username = '$username'";
         $stmt->execute();
-        $stmt->store_result();
         
-        if ($stmt->num_rows > 0) {
-            $stmt->bind_result($id, $hashed_password);
-            $stmt->fetch();
+        if ($stmt === false) {
+            die('Erreur de la requête SQL.');
+        }
+        
+        if ($stmt->rowCount() > 0) {
+            $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-            // Vérifiez le mot de passe
-            if (password_verify($password, $hashed_password)) {
-                // Mot de passe correct, démarrez la session
-                $_SESSION['id'] = $id;
-                header('Location: /');
+            // Verify the password
+            if ($password == $user['password']) {
+                echo "bon mdp";
+                // Correct password, start the session
+                $_SESSION['id'] = $user['id'];
+                header('Location: ../admin/dashboard_admin.php');
                 exit;
             } else {
+                echo "mauvais mdp";
                 $error = "Nom d'utilisateur ou mot de passe incorrect.";
             }
         } else {
             $error = "Nom d'utilisateur ou mot de passe incorrect.";
         }
-        
-        $stmt->close();
     }
 }
-
-$conn->close();
 ?>

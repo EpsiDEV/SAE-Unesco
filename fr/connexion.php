@@ -22,6 +22,9 @@
                 <input type="submit" name="submit" value="Se connecter">
             </div>
         </form>
+        <?php if (isset($error)): ?>
+            <p style="color:red;"><?php echo $error; ?></p>
+        <?php endif; ?>
     </div>
 </body>
 </html>
