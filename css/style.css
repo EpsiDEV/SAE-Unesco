@@ -127,6 +127,70 @@ li {
   display: none;
 }
 
+/* Fichier CSS: style.css */
+
+/* Fichier CSS: style.css */
+
+.body-connexion {
+  font-family: Arial, sans-serif;
+  background-color: #505050;
+  margin: 0;
+  padding: 0;
+}
+
+.container-connexion {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.container-connexion h1 {
+  color: #505050;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.container-connexion label {
+  display: block;
+  color: #505050;
+  margin-bottom: 5px;
+}
+
+.container-connexion input[type="text"],
+.container-connexion input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.container-connexion input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #f7af3e;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container-connexion input[type="submit"]:hover {
+  background-color: #e09a34;
+}
+
+
 /* Le titre principal de la page */
 
 .header-accueil .titre-principal {

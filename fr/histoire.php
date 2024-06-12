@@ -248,43 +248,7 @@
     </div>
   </div>
 
-  <footer class="footer">
-    <ul class="social-icon">
-      <li class="social-icon__item">
-        <a class="social-icon__link" href="https://www.facebook.com/chateaufontainebleau" target="_blank">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-      </li>
-      <li class="social-icon__item">
-        <a class="social-icon__link" href="https://www.linkedin.com/company/chateau-de-fontainebleau/" target="_blank">
-          <i class="fa-brands fab fab fa-linkedin-in"></i>
-        </a>
-      </li>
-      <li class="social-icon__item">
-        <a class="social-icon__link" href="https://www.instagram.com/chateaufontainebleau" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </li>
-      <li class="social-icon__item">
-        <a class="social-icon__link" href="https://www.youtube.com/channel/UCuHsrpyGJjGPixHWu7yrDSQ" target="_blank">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-      </li>
-      <li class="social-icon__item">
-        <a class="social-icon__link" href="https://www.pinterest.com/chfontainebleau" target="_blank">
-          <i class="fa-brands fa-pinterest"></i>
-        </a>
-      </li>
-    </ul>
-    <p>2023-2024 BUT Informatique</p>
-    <section class="logos">
-      <img class="logo_mcn" src="../assets/mcn.png" />
-      <a href="https://iut.univ-gustave-eiffel.fr/" target="_blank"><img class="logo_iut"
-          src="../assets/logo.png" /></a>
-      <a href="https://whc.unesco.org/fr/list/160" target="_blank"><img class="logo_unesco"
-          src="../assets/unesco.png" /></a>
-    </section>
-  </footer>
+  <?php include("../include/footer.inc.php") ?>
 
   <!-- Import pour les animations au scroll -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

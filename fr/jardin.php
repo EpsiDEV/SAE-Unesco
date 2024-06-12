@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jardins</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../assets/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://db.onlinewebfonts.com/a/fFdx9aaQTqZZ01nqPsTAj0nmjQRRR3uMREwFN1QZtpvC92BnjoXvE3Ire9407myIbd2392Uj"
+    rel="stylesheet" type="text/css" />
+    <link rel="preload" href="../css/style.css" as="style" />
+</head>
+
+<body>
+  <!-- Haut de page -->
+  <header class="header-accueil header-jardins">
+    <?php include("../include/header.inc.php") ?>
+    <h1 class="titre-principal">Jardins</h1>
+  </header>
+
+  <main class="conteneur-jardins">
+    <div class="element">
+      <img src="../assets/jardins/etang_carpes.png" />
+      <h3>L'Étang aux carpes</h3>
+      <p>
+        Ouvrant sur le midi, l’étang aux carpes doit son nom aux fameuses
+        carpes dont la présence à Fontainebleau est attestée depuis Henri IV.
+      </p>
+    </div>
+
+    <div class="element">
+      <img src="../assets/jardins/grotte_pins.png" />
+      <h3>La grotte des Pins</h3>
+      <p>
+        Exemple précoce de grotte artificielle en France, la « grotte des pins
+        » termine l’extrémité de l’aile Louis XV construite à la place de
+        l’aile de la galerie d’Ulysse.
+      </p>
+    </div>
+
+    <div class="element">
+      <img src="../assets/jardins/grand_parterre.png" />
+      <h3>Le Grand Parterre</h3>
+      <p>
+        La création du Grand Parterre de 1660 à 1664 – le plus vaste d’Europe,
+        avec ses 14 hectares – par André Le Nôtre et Louis Le Vau, témoigne de
+        la clarification de l’espace voulue par Louis XIV à Fontainebleau.
+      </p>
+    </div>
+  </main>
+
+  <div class="parc">
+    <img src="../assets/jardins/parc.png" />
+    <h3>Le Parc</h3>
+    <p>
+      Étendu au-delà du dénivelé du bassin des Cascades, le parc marquait
+      autrefois – à l’est – les limites du domaine royal. Depuis le village
+      d’Avon, il était traversé par la principale voie d’accès au château. Sa
+      configuration actuelle, l’organisation du réseau de cascatelles et
+      d’allées en étoile, résulte de la création, sous Henri IV, d’un grand
+      canal long de près de 1200 mètres (1606-1609) pour 40 mètres de large.
+      Planté initialement de plus de soixante mille arbres où croissaient les
+      rangées de peupliers blancs, les chênes et les arbres fruitiers, ce «
+      parc fermé » et son canal étaient la fierté du roi, qui en suivit le
+      chantier. En 1609, il fallut plus d’une semaine pour le remplir et, dès
+      l’automne, le roi y naviguait.
+    </p>
+  </div>
+
+  <div class="fin-jardins">
+    <div class="element">
+      <img src="../assets/jardins/cour_offices.png" />
+      <h3>La cour des Offices/quartier Henri IV</h3>
+      <p>
+        Vaste ensemble formé par trois ailes en grès, briques et moellons
+        enduits, cette avant-cour démontre l’ambition d’Henri IV de créer un
+        nouvel accès au château, par la ville.
+      </p>
+    </div>
+
+    <div class="element">
+      <img src="../assets/jardins/porte_baptistere.png" />
+      <h3>La porte du Baptistère</h3>
+      <p>
+        C’est Henri IV, grand roi bâtisseur, qui fit élever, vers 1606, cette
+        porte triomphale surmontée d’un dôme, offrant à la cour ovale une
+        ouverture à l’Est.
+      </p>
+    </div>
+  </div>
+
+  <section class="horaires">
+    <h1>Voici les horaires :</h1>
+    <a href="https://www.chateaudefontainebleau.fr/preparez-votre-visite/horaires-et-tarifs/#horaire">
+      <h2><i class="fa-solid fa-arrow-right"></i> Lien vers les horaires</h2>
+    </a>
+  </section>
+
+  <?php include("../include/footer.inc.php") ?>
+
+  <script>
+    function toggleMenu() {
+      var navList = document.querySelector(".header-accueil .nav-bar ul");
+      navList.classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>
