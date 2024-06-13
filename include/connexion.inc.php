@@ -9,4 +9,4 @@ try {
     echo "ERREUR : La connexion a échouée : " . $e->getMessage();
     die();
 }
-?>
+?>  

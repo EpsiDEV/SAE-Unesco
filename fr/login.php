@@ -9,12 +9,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($username) || empty($password)) {
         $error = "Veuillez entrer le nom d'utilisateur et le mot de passe.";
     } else {
-        echo $username;
-        echo $password; 
         // Prepare a secure SQL statement to avoid SQL injection
         $stmt = $bdd->prepare("SELECT id, password FROM users WHERE username = :username");
         $stmt->bindParam(':username', $username);
-        echo "SELECT id, password FROM users WHERE username = '$username'";
         $stmt->execute();
         
         if ($stmt === false) {
@@ -29,14 +26,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 echo "bon mdp";
                 // Correct password, start the session
                 $_SESSION['id'] = $user['id'];
-                header('Location: ../admin/dashboard_admin.php');
+                $_SESSION['role'] = $user['role'];
+                header('Location: admin.php');
                 exit;
             } else {
-                echo "mauvais mdp";
                 $error = "Nom d'utilisateur ou mot de passe incorrect.";
+                header('Location: connexion.php?error=' . urlencode($error));
+                exit;
             }
         } else {
             $error = "Nom d'utilisateur ou mot de passe incorrect.";
+            header('Location: connexion.php?error=' . urlencode($error));
+            exit;
         }
     }
 }

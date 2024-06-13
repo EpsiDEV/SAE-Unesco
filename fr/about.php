@@ -62,7 +62,7 @@ font-family: "Cicle Gordita Italic";
 
     <main class="team_presentation">
       <div class="person">
-        <img src="../assets/about/photo_test.jpg" class="person_photo" />
+        <img src="../assets/about/jawed.jpg" class="person_photo" />
         <div class="person_details">
           <h2 class="person_name">Jawed</h2>
           <h4>Chef d'équipe / Organisateur</h4>
@@ -78,7 +78,7 @@ font-family: "Cicle Gordita Italic";
       </div>
 
       <div class="person">
-        <img src="../assets/about/photo_test.jpg" class="person_photo" />
+        <img src="../assets/about/kirushikesan.png" class="person_photo" />
         <div class="person_details">
           <h2 class="person_name">Kirushikesan</h2>
           <h4>Concepteur / Perfectionniste</h4>
@@ -94,23 +94,7 @@ font-family: "Cicle Gordita Italic";
       </div>
 
       <div class="person">
-        <img src="../assets/about/photo_test.jpg" class="person_photo" />
-        <div class="person_details">
-          <h2 class="person_name">Kilian</h2>
-          <h4>Propulseur</h4>
-          <div class="person_links">
-            <a href="https://www.linkedin.com/feed/" target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/Kirushield" target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="person">
-        <img src="../assets/about/photo_test.jpg" class="person_photo" />
+        <img src="../assets/about/victor.png" class="person_photo" />
         <div class="person_details">
           <h2 class="person_name">Victor</h2>
           <h4>Expert / Coordinateur</h4>
@@ -131,13 +115,13 @@ font-family: "Cicle Gordita Italic";
       <div class="paragraphes">
         <p>
           Ce site et son contenu sont la propriété intellectuelle de
-          L’Université Gustave Eiffel et de l'UNESCO. Toute reproduction ou
+          L'Université Gustave Eiffel et de l'UNESCO. Toute reproduction ou
           représentation totale ou partielle de ce site ou de son contenu est
           interdite sans autorisation préalable.
         </p>
         <p>
           Les données personnelles collectées sur ce site sont destinées à
-          L’Université Gustave Eiffel et de l'UNESCO dans le cadre de leur
+          L'Université Gustave Eiffel et de l'UNESCO dans le cadre de leur
           collaboration. Conformément à la loi, vous disposez d'un droit
           d'accès, de rectification et de suppression de vos données. Pour
           exercer ce droit, veuillez nous contacter à l'adresse indiquée
@@ -148,7 +132,7 @@ font-family: "Cicle Gordita Italic";
 
     <section class="contact">
       <h2>Nous contacter</h2>
-      <form action="">
+      <form action="mailto: ">
         <div class="entree">
           <label for="name">Votre nom</label>
           <input type="text" name="nom" placeholder="Dupont" required />
@@ -181,12 +165,12 @@ font-family: "Cicle Gordita Italic";
     </section>
 
     <section class="fin">
-      Nous remercions toute l’équipe pédagogique de l’université Gustave Eiffel
+      Nous remercions toute l'équipe pédagogique de l'université Gustave Eiffel
       et en particulier nos professeurs : Monsieur Ettayeb ainsi que Monsieur
       Cessy de nous avoir accompagné dans ce projet.
     </section>
 
-    <?php include("../include/footer-about.inc.php") ?>
+    <?php include("../include/footer.inc.php") ?>
 
     <script>
       function toggleMenu() {

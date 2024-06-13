@@ -1,23 +1,26 @@
+
 <?php
 include("../include/connexion.inc.php");
 
-// function to fetch translations
 function getTranslation($key, $lang, $bdd) {
     $stmt = $bdd->prepare("SELECT translation FROM trad WHERE key = :key AND lang = :lang");
-    $stmt->execute(['key' => $key, 'lang' => $lang]);
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    return $result ? $result['translation'] : $key; // return key if no translation found
+    if ($stmt->execute(['key' => $key, 'lang' => $lang])) {
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result ? $result['translation'] : $key;
+    } else {
+        return $key;
+    }
 }
 
 $lang = isset($_GET['lang']) ? $_GET['lang'] : 'fr';
-
-$title = getTranslation('title', $lang, $bdd);
 $home = getTranslation('home', $lang, $bdd);
 $plan = getTranslation('plan', $lang, $bdd);
 $architecture = getTranslation('architecture', $lang, $bdd);
 $histoire = getTranslation('histoire', $lang, $bdd);
 $jardin = getTranslation('jardin', $lang, $bdd);
 $about = getTranslation('about', $lang, $bdd);
+
+$title = getTranslation('title', $lang, $bdd);
 $header_title = getTranslation('header_title', $lang, $bdd);
 $francois_title = getTranslation('francois_title', $lang, $bdd);
 $francois_text = getTranslation('francois_text', $lang, $bdd);
@@ -25,9 +28,8 @@ $learn_more = getTranslation('learn_more', $lang, $bdd);
 $forest_title = getTranslation('forest_title', $lang, $bdd);
 $forest_more = getTranslation('forest_more', $lang, $bdd);
 $castle_hours = getTranslation('castle_hours', $lang, $bdd);
-$footer_text = getTranslation('footer_text', $lang, $bdd);
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="<?php echo $lang; ?>">
@@ -43,7 +45,7 @@ $footer_text = getTranslation('footer_text', $lang, $bdd);
     />
     <meta
       property="og:description"
-      content="Un site tout simplement incroyable réalisé par 4 étudiants en BUT Informatique qui va révolutionner le monde numérique et la façon dont nous utilisons la technologique."
+      content="Un site web réalisé par 3 étudiants en BUT Informatique ayant pour but de mettre en lumière le patrimoine de Fontainebleau."
     />
     <meta name="theme-color" content="#FF0000" />
     <title><?php echo $title; ?></title>
@@ -68,24 +70,29 @@ $footer_text = getTranslation('footer_text', $lang, $bdd);
     <!-- Le haut de page -->
 
     <header class="header-accueil">
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="index.php?lang=<?php echo $lang; ?>"><?php echo $home; ?></a></li>
-          <li><a href="plan.php?lang=<?php echo $lang; ?>"><?php echo $plan; ?></a></li>
-          <li><a href="architecture.php?lang=<?php echo $lang; ?>"><?php echo $architecture; ?></a></li>
-          <li><a href="histoire.php?lang=<?php echo $lang; ?>"><?php echo $histoire; ?></a></li>
-          <li><a href="jardin.php?lang=<?php echo $lang; ?>"><?php echo $jardin; ?></a></li>
-          <li><a href="about.php?lang=<?php echo $lang; ?>"><?php echo $about; ?></a></li>
-        </ul>
-        <div class="choix-langues">
-          <a href="index.php?lang=fr"><img src="../assets/france.png" /></a>
-          <a href="index.php?lang=en"><img src="../assets/royaume-uni.png" /></a>
-          <a href="index.php?lang=es"><img src="../assets/espagne.png" /></a>
-        </div>
-        <div class="menu-icon" onclick="toggleMenu()">
-          <i class="fa-solid fa-bars" style="color: #f6f5f4"></i>
-        </div>
+
+      <!-- Début nav bar -->
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="index.php?lang=<?php echo $lang; ?>"><?php echo $home; ?></a></li>
+            <li><a href="plan.php?lang=<?php echo $lang; ?>"><?php echo $plan; ?></a></li>
+            <li><a href="architecture.php?lang=<?php echo $lang; ?>"><?php echo $architecture; ?></a></li>
+            <li><a href="histoire.php?lang=<?php echo $lang; ?>"><?php echo $histoire; ?></a></li>
+            <li><a href="jardin.php?lang=<?php echo $lang; ?>"><?php echo $jardin; ?></a></li>
+            <li><a href="about.php?lang=<?php echo $lang; ?>"><?php echo $about; ?></a></li>
+            <a href="../fr/connexion.php" class="connect">Se connecter</a>
+          </ul>
+          <div class="choix-langues">
+            <a href="index.php?lang=fr"><img src="../assets/france.png" /></a>
+            <a href="index.php?lang=en"><img src="../assets/royaume-uni.png" /></a>
+            <a href="index.php?lang=es"><img src="../assets/espagne.png" /></a>
+          </div>
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars" style="color: #f6f5f4"></i>
+          </div>
       </nav>
+      <!-- Fin nav bar -->
+
       <h1 class="titre-principal"><?php echo $header_title; ?></h1>
     </header>
 
@@ -156,65 +163,7 @@ $footer_text = getTranslation('footer_text', $lang, $bdd);
       <h1><i class="fa-solid fa-arrow-right"></i> <a href="https://www.chateaudefontainebleau.fr/preparez-votre-visite/horaires-et-tarifs/#horaire"><?php echo $castle_hours; ?></a></h1>
     </section>
 
-    <footer class="footer">
-      <ul class="social-icon">
-        <li class="social-icon__item">
-          <a
-            class="social-icon__link"
-            href="https://www.facebook.com/chateaufontainebleau"
-            target="_blank"
-          >
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-        </li>
-        <li class="social-icon__item">
-          <a
-            class="social-icon__link"
-            href="https://www.linkedin.com/company/chateau-de-fontainebleau/"
-            target="_blank"
-          >
-            <i class="fa-brands fab fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li class="social-icon__item">
-          <a
-            class="social-icon__link"
-            href="https://www.instagram.com/chateaufontainebleau"
-            target="_blank"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </li>
-        <li class="social-icon__item">
-          <a
-            class="social-icon__link"
-            href="https://www.youtube.com/channel/UCuHsrpyGJjGPixHWu7yrDSQ"
-            target="_blank"
-          >
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-        </li>
-        <li class="social-icon__item">
-          <a
-            class="social-icon__link"
-            href="https://www.pinterest.com/chfontainebleau"
-            target="_blank"
-          >
-            <i class="fa-brands fa-pinterest"></i>
-          </a>
-        </li>
-      </ul>
-      <p><?php echo $footer_text; ?></p>
-      <section class="logos">
-        <img class="logo_mcn" src="../assets/mcn.png" />
-        <a href="https://iut.univ-gustave-eiffel.fr/" target="_blank"
-          ><img class="logo_iut" src="../assets/logo.png"
-        /></a>
-        <a href="https://whc.unesco.org/fr/list/160" target="_blank"
-          ><img class="logo_unesco" src="../assets/unesco.png"
-        /></a>
-      </section>
-    </footer>
+    <?php include("../include/footer.inc.php"); ?>
 
     <script>
       function toggleMenu() {

@@ -102,6 +102,16 @@ li {
   padding: 20px;
 }
 
+.header-accueil .nav-bar .connect{
+  margin-top: 0.5rem;
+  padding: 1rem;
+  color: white;
+  font-size: 1rem;
+  background-color: #b94503;
+  border-style: none;
+  border-radius: 10px;
+}
+
 .header-accueil .nav-bar li:hover a {
   color: #f7af3e;
   transition: 0.3s all;
@@ -158,6 +168,7 @@ li {
 .form-group {
   margin-bottom: 15px;
   text-align: left;
+
 }
 
 .container-connexion label {
@@ -677,6 +688,7 @@ li {
 /* Style de la page architecture */
 .header-architecture {
   background-image: url(../assets/architecture/bg.png);
+  width: 100%;
 }
 
 .conteneur-architecture {
@@ -690,6 +702,8 @@ li {
 .conteneur-architecture .composant-architecture {
   position: relative;
 }
+
+
 
 .conteneur-architecture .composant-architecture p {
   position: absolute;
@@ -706,9 +720,17 @@ li {
   transition: 0.5s ease;
 }
 
+.merveille{
+  font-size: 5rem;
+}
+
+.conteneur-architecture .composant-architecture img {
+  width: 80%;
+}
+
 .conteneur-architecture .composant-architecture:hover p {
   height: 100%;
-  line-height: 30px;
+  width: 80%;
   transition: 0.5s ease;
 }
 
@@ -988,6 +1010,17 @@ h1 {
   .header-accueil .nav-bar .menu-icon {
     display: block;
     width: 40px;
+  }
+
+  .merveille{
+    font-size: 2rem;
+  }
+
+  .conteneur-architecture .composant-architecture:hover p {
+    height: 100%;
+    width: 80%;
+    font-size: 0.8rem;
+    transition: 0.5s ease;
   }
 
   .menu-icon .fa-bars {

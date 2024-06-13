@@ -339,3 +339,26 @@ textarea::placeholder {
     background-positon-x: 0rem;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .team_presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .mentions {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .mentions h2 {
+    font-size: 3.6rem;
+    color: #f4f4f4;
+  }
+}

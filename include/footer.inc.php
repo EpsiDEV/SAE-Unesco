@@ -24,7 +24,7 @@
             href="https://www.linkedin.com/company/chateau-de-fontainebleau/"
             target="_blank"
           >
-            <i class="fa-brands fab fab fa-linkedin-in"></i>
+            <i class="fa-brands fab fa-linkedin-in"></i>
           </a>
         </li>
         <li class="social-icon__item">
