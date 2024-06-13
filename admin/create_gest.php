@@ -1,3 +1,13 @@
+<?php
+session_start();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+// Check if user is logged in
+if (!isset($_SESSION['id']) || $_SESSION['role'] != "admin") {
+    header('Location: ../fr/connexion.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

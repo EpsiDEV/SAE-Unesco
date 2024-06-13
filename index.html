@@ -10,19 +10,7 @@
 
     <title>Redirection...</title>
     <script type="text/javascript">
-        if (navigator.browserLanguage) {
-            var language = navigator.browserLanguage;
-        } else {
-            var language = navigator.language;
-        }
-
-        if (language.indexOf('fr') > -1) {
-            document.location.href = 'fr';
-        } else if (language.indexOf('es') > -1) {
-            document.location.href = 'es';
-        } else {
-            document.location.href = 'en';
-        }
+        document.location.href = './src/index.php?lang=' + navigator.language;
     </script>
 </head>
 </html>

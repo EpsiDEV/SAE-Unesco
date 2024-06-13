@@ -1,3 +1,21 @@
+<?php
+if (!function_exists('getImagePath')) {
+    function getImagePath($title, $bdd) {
+        $stmt = $bdd->prepare("SELECT path FROM images WHERE titre = :title");
+        if ($stmt->execute(['title' => $title])) {
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $result ? $result['path'] : '';
+        } else {
+            return '';
+        }
+    }
+}
+
+$mcn = getImagePath('logo_mcn_footer', $bdd);
+$iut = getImagePath('logo_iut_footer', $bdd);
+$unesco = getImagePath('unesco_footer', $bdd);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,12 +75,12 @@
       </ul>
       <p>2023-2024 BUT Informatique</p>
       <section class="logos">
-        <img class="logo_mcn" src="../assets/mcn.png" />
+        <img class="logo_mcn" src="<?php echo $mcn; ?>" />
         <a href="https://iut.univ-gustave-eiffel.fr/" target="_blank"
-          ><img class="logo_iut" src="../assets/logo.png"
+          ><img class="logo_iut" src="<?php echo $iut; ?>"
         /></a>
         <a href="https://whc.unesco.org/fr/list/160" target="_blank"
-          ><img class="logo_unesco" src="../assets/unesco.png"
+          ><img class="logo_unesco" src="<?php echo $unesco; ?>"
         /></a>
       </section>
     </footer>
