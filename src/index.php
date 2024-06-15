@@ -38,6 +38,7 @@ $forest_title = getTranslation('forest_title', $lang, $bdd);
 $forest_more = getTranslation('forest_more', $lang, $bdd);
 $castle_hours = getTranslation('castle_hours', $lang, $bdd);
 
+
 $francois_image = getImagePath('francois_premier_accueil', $bdd);
 $france_flag_image = getImagePath('drapeau_france_header', $bdd);
 $uk_flag_image = getImagePath('drapeau_royaume_uni_header', $bdd);
@@ -130,7 +131,7 @@ $login = getTranslation('login', $lang, $bdd);
 
     <section class="foret">
       <h1><?php echo $forest_title; ?></h1>
-      <a href="">
+      <a href="jardin.php?lang=<?php echo $lang; ?>#lien-parc">
         <div class="ensavoir">
           <p><?php echo $forest_more; ?> <i class="fa-solid fa-arrow-right"></i></p>
         </div>

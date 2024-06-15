@@ -3,9 +3,9 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Check if user is logged in
+
 if (!isset($_SESSION['id']) || $_SESSION['role'] != "admin") {
-    header('Location: ../fr/connexion.php');
+    header('Location: ../src/connexion.php');
     exit();
 }
 
@@ -52,15 +52,16 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
+    <?php include 'header_admin.php'; ?>
     <div class="container">
         <h1 class="mt-5">Tableau de Bord - Administrateur</h1>
         <table class="table table-bordered mt-3">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Username</th>
-                    <th>Role</th>
-                    <th>Edit</th>
+                    <th>Nom d'utilisateur</th>
+                    <th>Rôle</th>
+                    <th>Modifcation</th>
                 </tr>
             </thead>
             <tbody>
@@ -73,7 +74,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <form method="post" action="">
                                 <input type="hidden" name="user_id" value="<?php echo $user['id']; ?>">
                                 <input type="hidden" name="csrf_token" value="<?php echo $csrf_token; ?>">
-                                <button type="submit" name="delete" class="btn btn-danger" onclick="return confirm('Vous êtes sûr de vouloir supprimer cet utilisateur ?')">Delete</button>
+                                <button type="submit" name="delete" class="btn btn-danger" onclick="return confirm('Vous êtes sûr de vouloir supprimer cet utilisateur ?')">Supprimer</button>
                                 <a href="edit_gest.php?user_id=<?php echo $user['id']; ?>" class="btn btn-secondary">Modifier</a>
                             </form>
                         </td>

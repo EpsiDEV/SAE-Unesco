@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("../include/connexion.inc.php");
 
 function getTranslation($key, $lang, $bdd) {
@@ -182,7 +183,7 @@ $team_victor = getTranslation('team_victor', $lang, $bdd);
 
     <section class="contact">
       <h2><?php echo $contact_title; ?></h2>
-      <form action="mailto: ">
+      <form action="mailto:fontainebleauunesco@gmail.com">
         <div class="entree">
           <label for="name"><?php echo $name_label; ?></label>
           <input type="text" name="nom" placeholder="<?php echo $name_label; ?>" required />

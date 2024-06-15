@@ -276,16 +276,6 @@ textarea::placeholder {
   letter-spacing: 2px;
 }
 
-.footer {
-  position: relative;
-  background: #505050;
-  min-height: 100px;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
 .social-icon,
 .menu {
@@ -355,7 +345,7 @@ textarea::placeholder {
 }
 
 .logo_mcn, .logo_iut, .logo_unesco {
-  max-width: 100px; 
+  max-width: 250px; 
   max-height: 100px; 
 }
 
@@ -370,6 +360,10 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 900px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
   .team_presentation {
     display: flex;
     flex-direction: column;

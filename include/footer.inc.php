@@ -73,7 +73,7 @@ $unesco = getImagePath('unesco_footer', $bdd);
           </a>
         </li>
       </ul>
-      <p>2023-2024 BUT Informatique</p>
+      <p>&copy;2023-2024 BUT Informatique</p>
       <section class="logos">
         <img class="logo_mcn" src="<?php echo $mcn; ?>" />
         <a href="https://iut.univ-gustave-eiffel.fr/" target="_blank"

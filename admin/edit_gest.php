@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 
 // Check if user is logged in
 if (!isset($_SESSION['id']) || $_SESSION['role'] != "admin") {
-    header('Location: ../fr/connexion.php');
+    header('Location: ../src/connexion.php');
     exit();
 }
 
@@ -53,6 +53,7 @@ $_SESSION['csrf_token'] = $csrf_token;
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
+    <?php include 'header_admin.php'; ?>
     <div class="container">
         <h1 class="mt-5">Modifier Gestionnaire</h1>
         <form method="post" action="">

@@ -11,6 +11,8 @@ function getImagePath($title, $bdd) {
         return '';
     }
 }
+
+$parc_img = getImagePath('parc_jardin', $bdd);
 $foret = getImagePath('foret_accueil', $bdd);
 $bg_acceuil = getImagePath('bg_acceuil', $bdd);
 $train = getImagePath('train_plan', $bdd);
@@ -18,7 +20,7 @@ $bg_histoire = getImagePath('bg_histoire', $bdd);
 $bg_jardin = getImagePath('bg_jardin', $bdd);
 $bg_architecture = getImagePath('bg_architecture_architecture', $bdd);
 ?>
-<style>
+
 @keyframes animation {
   from {
     opacity: 0;
@@ -381,7 +383,7 @@ li {
 
 .foret {
   margin: 5% 0;
-  background-image: url(<?php echo $foret; ?>);
+  background-image: url(<?php echo $parc_img; ?>);
   background-size: cover;
   height: 90vh;
   background-position: 50%;
@@ -797,6 +799,10 @@ h1 {
 /* Style du site responsive */
 
 @media screen and (max-width: 900px) {
+  footer {
+    width: 100%;
+  }
+
   .header-accueil .titre-principal {
     font-size: 3rem;
     left: 50%;
@@ -1032,4 +1038,3 @@ h1 {
     font-size: 2rem;
   }
 }
-</style>

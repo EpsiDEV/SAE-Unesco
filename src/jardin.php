@@ -138,7 +138,7 @@ $login = getTranslation('login', $lang, $bdd);
     </div>
   </main>
 
-  <div class="parc">
+  <div class="parc" id="lien-parc">
     <img src="<?php echo $parc_img; ?>" />
     <h3><?php echo $parc; ?></h3>
     <p>

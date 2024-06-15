@@ -2,9 +2,9 @@
 session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-// Check if user is logged in
+
 if (!isset($_SESSION['id']) || $_SESSION['role'] != "admin") {
-    header('Location: ../fr/connexion.php');
+    header('Location: ../src/connexion.php');
     exit();
 }
 ?>
@@ -17,6 +17,7 @@ if (!isset($_SESSION['id']) || $_SESSION['role'] != "admin") {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
+    <?php include 'header_admin.php'; ?>
     <div class="container mt-5">
         <h1 class="mb-4">Créez un compte gestionnaire</h1>
         <form action="create.php" method="post">

@@ -3,11 +3,11 @@
     session_start();
 
     // Check if user is logged in
-    if (!isset($_SESSION['id'])) {
-        header('Location: ../fr/connexion.php');
+    if (!isset($_SESSION['id']) || !isset($_SESSION['role'])) {
+        header('Location: ../src/connexion.php');
         exit();
     }
-
+    $role = $_SESSION['role'];
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $titre = $_POST['titre'];
         $path = $_POST['path'];
@@ -30,12 +30,70 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Administration - Modifier les chemins des images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        section {
+            margin: 0 auto;
+            width: 80%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
+<?php
+    if ($role == 'admin') {
+        include '../admin/header_admin.php';
+    } else {
+        include '../admin/header_gest.php';
+    }
+?>
 <h1>Administration - Modifier les chemins des images</h1>
     <section>
         <table>
@@ -58,7 +116,7 @@
                             <input type="text" name="path" value="<?php echo htmlspecialchars($image['path']); ?>">
                         </td>
                         <td>
-                            <button type="submit">Save</button>
+                            <button type="submit">Enregistrer</button>
                         </td>
                     </form>
                 </tr>

@@ -26,9 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $_SESSION['role'] = $user['role'];
                     
                     if ($user['role'] == "gest") {
-                        header('Location: ../accueil_gest.php');
+                        header('Location: ../src/gest.php');
                     } else {
-                        header('Location: ../admin/accueil_admin.php');
+                        header('Location: ../admin/dashboard_admin.php');
                     }
                     exit;
                 } else {
