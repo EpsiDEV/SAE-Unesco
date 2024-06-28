@@ -183,10 +183,10 @@ $team_victor = getTranslation('team_victor', $lang, $bdd);
 
     <section class="contact">
       <h2><?php echo $contact_title; ?></h2>
-      <form action="mailto:fontainebleauunesco@gmail.com">
+      <form action="mail.php" method="post">
         <div class="entree">
           <label for="name"><?php echo $name_label; ?></label>
-          <input type="text" name="nom" placeholder="<?php echo $name_label; ?>" required />
+          <input type="text" name="name" placeholder="<?php echo $name_label; ?>" required />
         </div>
 
         <div class="entree">
@@ -195,6 +195,17 @@ $team_victor = getTranslation('team_victor', $lang, $bdd);
             type="email"
             name="email"
             placeholder="pierredupont@gmail.com"
+            required
+          />
+        </div>
+
+        <div class="entree">
+          <label for="subject">Sujet</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Sujet"
             required
           />
         </div>
